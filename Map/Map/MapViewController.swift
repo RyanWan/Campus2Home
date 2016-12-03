@@ -35,15 +35,27 @@ class MapViewController: UIViewController {
         mapView.addSubview(button)
         view = mapView
         
-//        let button1 = UIBarButtonItem(image: UIImage(named: "imagename"), style: .Plain, target: self, action: Selector("action")) // action:#selector(Class.MethodName) for swift 3
-//        self.navigationItem.rightBarButtonItem  = button1
         
         // Creates a marker in the center of the map.
         let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
+        marker.position = CLLocationCoordinate2D(latitude: 38.648342, longitude:-90.311463)
+        marker.title = "1"
+        //marker.tracksInfoWindowChanges
         marker.map = mapView
+        mapView.selectedMarker = marker
+        
+        let marker2 = GMSMarker()
+        marker2.position = CLLocationCoordinate2D(latitude: 38.647698,longitude:-90.309694)
+        marker2.title = "2"
+        marker2.map = mapView
+        mapView.selectedMarker = marker2
+        
+        let path = GMSMutablePath()
+        path.addCoordinate(CLLocationCoordinate2D(latitude: 38.648342, longitude: -90.311463))
+        path.addCoordinate(CLLocationCoordinate2D(latitude:38.647698, longitude: -90.309694))
+        let polyline = GMSPolyline(path: path)
+        polyline.map = mapView
+        
         
         loadData(self.address)
         
