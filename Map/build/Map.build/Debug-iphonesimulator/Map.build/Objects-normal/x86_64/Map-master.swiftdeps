@@ -1,12 +1,13 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
 options: "b727aec5e12758819cfec2781d850a6d"
-build_time: [534045257, 93726000]
+build_time: [534054850, 795720000]
 inputs:
   "/Users/dinghba/repos/Campus2Home/Map/Map/DriverShuttleViewController.swift": [532245238, 0]
   "/Users/dinghba/repos/Campus2Home/Map/Map/SwiftyJSON.swift": [534040203, 0]
-  "/Users/dinghba/repos/Campus2Home/Map/Map/DestinationsViewController.swift": [534041823, 0]
+  "/Users/dinghba/repos/Campus2Home/Map/Map/DestinationsViewController.swift": [534053824, 0]
+  "/Users/dinghba/repos/Campus2Home/Map/Map/AfterSubmitViewController.swift": [534053636, 0]
   "/Users/dinghba/repos/Campus2Home/Map/Map/ShuttleViewController.swift": [532063385, 0]
-  "/Users/dinghba/repos/Campus2Home/Map/Map/MapViewController.swift": [534045250, 0]
-  "/Users/dinghba/repos/Campus2Home/Map/Map/SubmitViewController.swift": [532066871, 0]
-  "/Users/dinghba/repos/Campus2Home/Map/Map/ViewController.swift": [532060507, 0]
+  "/Users/dinghba/repos/Campus2Home/Map/Map/MapViewController.swift": [534047103, 0]
+  "/Users/dinghba/repos/Campus2Home/Map/Map/SubmitViewController.swift": [534054847, 0]
+  "/Users/dinghba/repos/Campus2Home/Map/Map/ViewController.swift": [534048778, 0]
   "/Users/dinghba/repos/Campus2Home/Map/Map/AppDelegate.swift": [534040202, 0]

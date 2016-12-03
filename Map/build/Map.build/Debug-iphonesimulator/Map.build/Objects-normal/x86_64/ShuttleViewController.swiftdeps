@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C3Map21ShuttleViewController", ""]
 provides-dynamic-lookup:
-- "buses"
-- "setupTableView"
 - "viewDidLoad"
+- "setupTableView"
 - "didReceiveMemoryWarning"
+- "buses"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
 depends-top-level:
-- "UITableViewCell"
-- "StringLiteralType"
-- "Int"
-- "Array"
-- !private "print"
-- "ShuttleViewController"
 - !private "BooleanLiteralType"
-- "UITableView"
-- "NSIndexPath"
 - "UIViewController"
-- "UITableViewDataSource"
-- !private "SubmitViewController"
 - "UITableViewDelegate"
+- "UITableViewDataSource"
+- "UITableViewCell"
+- "Int"
+- !private "SubmitViewController"
+- "StringLiteralType"
+- "NSIndexPath"
+- "ShuttleViewController"
+- "UITableView"
+- !private "print"
+- "Array"
 depends-member:
 - !private ["Ps9AnyObject", "SubmitViewController"]
 - !private ["Ps9AnyObject", "UITableView"]

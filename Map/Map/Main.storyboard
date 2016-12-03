@@ -17,36 +17,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8w-aR-n5N">
-                                <rect key="frame" x="198" y="149" width="205" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="205" id="urw-vk-Sw3"/>
-                                    <constraint firstAttribute="height" constant="128" id="zuM-hm-xea"/>
-                                </constraints>
-                                <state key="normal" title="Passenger"/>
-                                <connections>
-                                    <segue destination="Hd6-sJ-qmD" kind="show" id="DBR-d3-Cww"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5t-UY-Qol">
-                                <rect key="frame" x="198" y="354" width="205" height="128"/>
+                                <rect key="frame" x="198" y="402" width="205" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Qzx-bY-XaD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Driver"/>
                                 <connections>
                                     <segue destination="VLe-pa-SP3" kind="show" id="uWD-U1-I6X"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8w-aR-n5N">
+                                <rect key="frame" x="198" y="173" width="205" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="jel-v8-k2s"/>
+                                    <constraint firstAttribute="width" constant="205" id="wZf-pr-cxe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Passenger"/>
+                                <connections>
+                                    <segue destination="Hd6-sJ-qmD" kind="show" id="DBR-d3-Cww"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="q5t-UY-Qol" secondAttribute="bottom" constant="118" id="6Ew-Jc-itU"/>
-                            <constraint firstItem="U8w-aR-n5N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GIQ-tp-Few"/>
-                            <constraint firstItem="U8w-aR-n5N" firstAttribute="leading" secondItem="q5t-UY-Qol" secondAttribute="leading" id="TJU-jG-16M"/>
-                            <constraint firstItem="U8w-aR-n5N" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="85" id="WSO-1J-Fj1"/>
-                            <constraint firstItem="q5t-UY-Qol" firstAttribute="top" secondItem="U8w-aR-n5N" secondAttribute="bottom" constant="77" id="bCh-7r-p7f"/>
-                            <constraint firstItem="U8w-aR-n5N" firstAttribute="trailing" secondItem="q5t-UY-Qol" secondAttribute="trailing" id="cTp-wh-ehY"/>
+                            <constraint firstItem="U8w-aR-n5N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AN1-4i-oIO"/>
+                            <constraint firstItem="U8w-aR-n5N" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="109" id="Fjv-KQ-kxF"/>
+                            <constraint firstItem="U8w-aR-n5N" firstAttribute="leading" secondItem="q5t-UY-Qol" secondAttribute="leading" id="Ipt-l5-kOr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="q5t-UY-Qol" secondAttribute="bottom" constant="70" id="UzG-SR-08c"/>
+                            <constraint firstItem="U8w-aR-n5N" firstAttribute="trailing" secondItem="q5t-UY-Qol" secondAttribute="trailing" id="vhL-rf-BQW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1iN-19-TEa"/>
+                    <connections>
+                        <outlet property="driverButton" destination="q5t-UY-Qol" id="KS3-OX-BET"/>
+                        <outlet property="passengerButton" destination="U8w-aR-n5N" id="4PW-yl-fav"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

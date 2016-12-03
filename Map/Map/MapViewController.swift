@@ -18,6 +18,7 @@ class MapViewController: UIViewController {
     //api key for geocoding:AIzaSyA-zNnojD_2V81XAKp-AShKGNb32bRwtfI
 
     // You don't need to modify the default init(nibName:bundle:) method.
+    var nextButton : UIButton = UIButton(frame: CGRect.zero);
     
     override func loadView() {
 
@@ -27,11 +28,11 @@ class MapViewController: UIViewController {
         let mapView = GMSMapView.mapWithFrame(CGRect.zero, camera: camera)
 //        mapView.frame = CGRectMake(0, 70, self.view.frame.size.width, self.view.frame.height * 0.7);
         mapView.myLocationEnabled = true
-        let button = UIButton(frame: CGRectMake(200, 600, 50, 20))
-        button.backgroundColor = UIColor.blackColor()
-        button.titleLabel?.textColor = UIColor.whiteColor()
-        button.titleLabel!.text = "Next"
-        
+        let button = UIButton(frame: CGRectMake(160, 600, 80, 40))
+        button.backgroundColor = UIColor.lightGrayColor()
+        button.setTitle("Next", forState: .Normal)
+        nextButton = button
+        button.addTarget(self, action: "nextButtonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
         mapView.addSubview(button)
         view = mapView
         
@@ -67,6 +68,9 @@ class MapViewController: UIViewController {
 //        navBar.setItems([navItem], animated: false);
     }
     
+    func nextButtonClicked(sender:UIButton!) {
+        print("Button Clicked")
+    }
     
     func loadData(searchText:String){
         dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED,0)){

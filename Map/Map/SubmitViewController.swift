@@ -35,10 +35,12 @@ class SubmitViewController: UIViewController {
         if (addressText != ""){
             let address = addressTextField.text?.stringByReplacingOccurrencesOfString(" ", withString: "+") as String?
             self.loadAndSendData(address!)
-            let detailedVC = MapViewController(nibName: "MapViewController", bundle: nil)
+            let detailedVC = AfterSubmitViewController(nibName: "AfterSubmitViewController", bundle: nil)
+            detailedVC.bus = self.bus
             navigationController?.pushViewController(detailedVC, animated: true)
         }
         
+
     }
     
     func loadAndSendData(searchText:String){

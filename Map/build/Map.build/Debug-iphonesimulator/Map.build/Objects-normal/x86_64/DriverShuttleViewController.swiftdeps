@@ -6,29 +6,29 @@ provides-nominal:
 provides-member:
 - ["C3Map27DriverShuttleViewController", ""]
 provides-dynamic-lookup:
+- "destinations"
 - "setupTableView"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 - "buses"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
-- "didReceiveMemoryWarning"
-- "destinations"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "UITableViewCell"
-- "NSIndexPath"
+- !private "DestinationsViewController"
 - "UITableViewDataSource"
 - "UITableViewDelegate"
-- "StringLiteralType"
+- !private "BooleanLiteralType"
 - "UIViewController"
-- !private "print"
-- !private "DestinationsViewController"
+- "DriverShuttleViewController"
+- "UITableViewCell"
 - "Array"
 - "Int"
+- "StringLiteralType"
+- "NSIndexPath"
 - "UITableView"
-- "DriverShuttleViewController"
+- !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "DestinationsViewController"]
 - !private ["Ps9AnyObject", "UITableView"]
