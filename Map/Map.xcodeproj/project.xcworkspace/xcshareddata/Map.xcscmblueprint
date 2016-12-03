@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DBBCB33A3CCA8794962C4BD6CFDBAC2074CB7899",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6280620C4EB7A9BFC7F097E7ED0846268E4D41D2" : 0,
+    "DBBCB33A3CCA8794962C4BD6CFDBAC2074CB7899" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B5F1FC03-D730-4D36-8956-FE027B91B3BF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6280620C4EB7A9BFC7F097E7ED0846268E4D41D2" : "..",
+    "DBBCB33A3CCA8794962C4BD6CFDBAC2074CB7899" : "Campus2Home\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Map",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Map\/Map.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Fishest\/cse438App.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6280620C4EB7A9BFC7F097E7ED0846268E4D41D2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/RyanWan\/Campus2Home.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DBBCB33A3CCA8794962C4BD6CFDBAC2074CB7899"
+    }
+  ]
+}
