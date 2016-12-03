@@ -29,7 +29,9 @@ class MapViewController: UIViewController {
         mapView.myLocationEnabled = true
         let button = UIButton(frame: CGRectMake(200, 600, 50, 20))
         button.backgroundColor = UIColor.blackColor()
-        button.titleLabel!.text = "TEXT"
+        button.titleLabel?.textColor = UIColor.whiteColor()
+        button.titleLabel!.text = "Next"
+        
         mapView.addSubview(button)
         view = mapView
         

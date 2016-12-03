@@ -6,34 +6,34 @@ provides-nominal:
 provides-member:
 - ["C3Map17MapViewController", ""]
 provides-dynamic-lookup:
-- "loadData"
 - "loadView"
-- "apiKey"
+- "loadData"
 - "fetchData"
 - "address"
+- "apiKey"
 depends-top-level:
-- !private "!="
-- !private "dispatch_async"
-- "String"
-- !private "UIButton"
-- !private "UIColor"
-- !private "GMSMapView"
-- !private "QOS_CLASS_USER_INITIATED"
-- !private "CGRectMake"
-- !private "BooleanLiteralType"
-- !private "CGRect"
-- !private "NSData"
-- !private "GMSMarker"
 - !private "dispatch_get_global_queue"
+- !private "UIButton"
+- !private "dispatch_async"
 - !private "dispatch_get_main_queue"
-- !private "print"
-- !private "GMSCameraPosition"
-- "MapViewController"
-- "UIViewController"
-- "StringLiteralType"
+- !private "GMSMarker"
+- "String"
+- !private "BooleanLiteralType"
+- !private "NSData"
 - !private "CLLocationCoordinate2D"
-- !private "NSURL"
+- "UIViewController"
+- !private "print"
 - !private "JSON"
+- !private "UIColor"
+- !private "CGRect"
+- "StringLiteralType"
+- "MapViewController"
+- !private "CGRectMake"
+- !private "GMSCameraPosition"
+- !private "!="
+- !private "QOS_CLASS_USER_INITIATED"
+- !private "NSURL"
+- !private "GMSMapView"
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "CGRectMake"]
@@ -68,9 +68,11 @@ depends-member:
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "snippet"]
 - !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "textColor"]
 - !private ["Ps9AnyObject", "title"]
 - !private ["Ps9AnyObject", "titleLabel"]
 - !private ["Ps9AnyObject", "view"]
+- !private ["Ps9AnyObject", "whiteColor"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
@@ -151,9 +153,11 @@ depends-member:
 - !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "snippet"]
 - !private ["Ps11CVarArgType", "text"]
+- !private ["Ps11CVarArgType", "textColor"]
 - !private ["Ps11CVarArgType", "title"]
 - !private ["Ps11CVarArgType", "titleLabel"]
 - !private ["Ps11CVarArgType", "view"]
+- !private ["Ps11CVarArgType", "whiteColor"]
 - ["Ps11CVarArgType", ""]
 - !private ["Vs9Character", "deinit"]
 - !private ["Ps14CollectionType", "Generator"]
@@ -218,9 +222,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "stringValue"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "textColor"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
 - !private ["Ps28CustomDebugStringConvertible", "titleLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
+- !private ["Ps28CustomDebugStringConvertible", "whiteColor"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "CGRect"]
 - !private ["Ps23CustomStringConvertible", "CGRectMake"]
@@ -266,9 +272,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "stringValue"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "textColor"]
 - !private ["Ps23CustomStringConvertible", "title"]
 - !private ["Ps23CustomStringConvertible", "titleLabel"]
 - !private ["Ps23CustomStringConvertible", "view"]
+- !private ["Ps23CustomStringConvertible", "whiteColor"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps28DictionaryLiteralConvertible", "Generator"]
 - !private ["Ps28DictionaryLiteralConvertible", "Index"]
@@ -323,9 +331,11 @@ depends-member:
 - !private ["Ps9Equatable", "stringValue"]
 - !private ["Ps9Equatable", "subscript"]
 - !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "textColor"]
 - !private ["Ps9Equatable", "title"]
 - !private ["Ps9Equatable", "titleLabel"]
 - !private ["Ps9Equatable", "view"]
+- !private ["Ps9Equatable", "whiteColor"]
 - !private ["Ps9Equatable", "zero"]
 - ["Ps9Equatable", ""]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "Generator"]
@@ -399,9 +409,11 @@ depends-member:
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "snippet"]
 - !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "textColor"]
 - !private ["Ps8Hashable", "title"]
 - !private ["Ps8Hashable", "titleLabel"]
 - !private ["Ps8Hashable", "view"]
+- !private ["Ps8Hashable", "whiteColor"]
 - ["Ps8Hashable", ""]
 - !private ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Generator"]
@@ -524,8 +536,10 @@ depends-member:
 - !private ["PSo8NSCoding", "myLocationEnabled"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "textColor"]
 - !private ["PSo8NSCoding", "titleLabel"]
 - !private ["PSo8NSCoding", "view"]
+- !private ["PSo8NSCoding", "whiteColor"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "blackColor"]
 - !private ["PSo9NSCopying", "cameraWithLatitude"]
@@ -534,6 +548,7 @@ depends-member:
 - !private ["PSo9NSCopying", "position"]
 - !private ["PSo9NSCopying", "snippet"]
 - !private ["PSo9NSCopying", "title"]
+- !private ["PSo9NSCopying", "whiteColor"]
 - !private ["CSo6NSData", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRect"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRectMake"]
@@ -596,9 +611,11 @@ depends-member:
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "snippet"]
 - !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "textColor"]
 - !private ["CSo8NSObject", "title"]
 - !private ["CSo8NSObject", "titleLabel"]
 - !private ["CSo8NSObject", "view"]
+- !private ["CSo8NSObject", "whiteColor"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "CGRectMake"]
 - !private ["PSo16NSObjectProtocol", "CLLocationCoordinate2D"]
@@ -632,12 +649,15 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "snippet"]
 - !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "textColor"]
 - !private ["PSo16NSObjectProtocol", "title"]
 - !private ["PSo16NSObjectProtocol", "titleLabel"]
 - !private ["PSo16NSObjectProtocol", "view"]
+- !private ["PSo16NSObjectProtocol", "whiteColor"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "blackColor"]
 - !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "whiteColor"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo5NSURL", "init"]
 - !private ["Ps21NilLiteralConvertible", "Generator"]
@@ -709,6 +729,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "mapWithFrame"]
 - !private ["PSo29UIAccessibilityIdentification", "myLocationEnabled"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - !private ["PSo29UIAccessibilityIdentification", "titleLabel"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
@@ -716,6 +737,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "mapWithFrame"]
 - !private ["PSo12UIAppearance", "myLocationEnabled"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "textColor"]
 - !private ["PSo12UIAppearance", "titleLabel"]
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "CGRectMake"]
@@ -745,6 +767,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "myLocationEnabled"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "textColor"]
 - !private ["PSo21UIAppearanceContainer", "titleLabel"]
 - !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -752,6 +775,7 @@ depends-member:
 - !private ["CSo8UIButton", "init"]
 - !private ["CSo8UIButton", "titleLabel"]
 - !private ["CSo7UIColor", "blackColor"]
+- !private ["CSo7UIColor", "whiteColor"]
 - !private ["PSo18UIContentContainer", "CGRect"]
 - !private ["PSo18UIContentContainer", "CGRectMake"]
 - !private ["PSo18UIContentContainer", "CLLocationCoordinate2D"]
@@ -786,6 +810,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "mapWithFrame"]
 - !private ["PSo17UICoordinateSpace", "myLocationEnabled"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "textColor"]
 - !private ["PSo17UICoordinateSpace", "titleLabel"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
@@ -793,6 +818,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "mapWithFrame"]
 - !private ["PSo13UIDynamicItem", "myLocationEnabled"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "textColor"]
 - !private ["PSo13UIDynamicItem", "titleLabel"]
 - !private ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "CGRectMake"]
@@ -822,10 +848,12 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "myLocationEnabled"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "textColor"]
 - !private ["PSo18UIFocusEnvironment", "titleLabel"]
 - !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo7UILabel", "text"]
+- !private ["CSo7UILabel", "textColor"]
 - !private ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "CGRectMake"]
 - !private ["CSo11UIResponder", "CLLocationCoordinate2D"]
@@ -855,6 +883,7 @@ depends-member:
 - !private ["CSo11UIResponder", "myLocationEnabled"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "textColor"]
 - !private ["CSo11UIResponder", "titleLabel"]
 - !private ["CSo11UIResponder", "view"]
 - !private ["PSo16UIStateRestoring", "CGRect"]
@@ -910,6 +939,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "myLocationEnabled"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "textColor"]
 - !private ["PSo18UITraitEnvironment", "titleLabel"]
 - !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", ""]
@@ -919,6 +949,7 @@ depends-member:
 - !private ["CSo6UIView", "mapWithFrame"]
 - !private ["CSo6UIView", "myLocationEnabled"]
 - !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "textColor"]
 - !private ["CSo6UIView", "titleLabel"]
 - !private ["CSo16UIViewController", "CGRect"]
 - !private ["CSo16UIViewController", "CGRectMake"]
@@ -973,6 +1004,7 @@ depends-member:
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps24_ColorLiteralConvertible", "blackColor"]
+- !private ["Ps24_ColorLiteralConvertible", "whiteColor"]
 - !private ["Ps24_DestructorSafeContainer", "Generator"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
 - !private ["Ps24_DestructorSafeContainer", "SubSequence"]
@@ -1012,6 +1044,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "myLocationEnabled"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps12_Reflectable", "text"]
+- !private ["Ps12_Reflectable", "textColor"]
 - !private ["Ps12_Reflectable", "titleLabel"]
 - !private ["Ps12_Reflectable", "zero"]
 - !private ["Ps18_SignedIntegerType", "Distance"]
