@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6CB15121DEFF5A20055333B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CB15111DEFF5A20055333B /* SwiftyJSON.swift */; };
 		B6F80E161DE16FDB00C48040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F80E151DE16FDB00C48040 /* AppDelegate.swift */; };
 		B6F80E181DE16FDB00C48040 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F80E171DE16FDB00C48040 /* ViewController.swift */; };
 		B6F80E1B1DE16FDB00C48040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F80E191DE16FDB00C48040 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6CB15111DEFF5A20055333B /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		B6F80E121DE16FDB00C48040 /* Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F80E151DE16FDB00C48040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6F80E171DE16FDB00C48040 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				B6F80E151DE16FDB00C48040 /* AppDelegate.swift */,
 				B6F80E171DE16FDB00C48040 /* ViewController.swift */,
 				B6F80E191DE16FDB00C48040 /* Main.storyboard */,
+				B6CB15111DEFF5A20055333B /* SwiftyJSON.swift */,
 				B6F80E1C1DE16FDB00C48040 /* Assets.xcassets */,
 				B6F80E1E1DE16FDB00C48040 /* LaunchScreen.storyboard */,
 				B6F80E211DE16FDB00C48040 /* Info.plist */,
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6CB15121DEFF5A20055333B /* SwiftyJSON.swift in Sources */,
 				B6F80E181DE16FDB00C48040 /* ViewController.swift in Sources */,
 				B6F80E161DE16FDB00C48040 /* AppDelegate.swift in Sources */,
 			);
