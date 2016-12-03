@@ -138,6 +138,7 @@ SWIFT_CLASS("_TtC3Map11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIRefreshControl;
 
 SWIFT_CLASS("_TtC3Map26DestinationsViewController")
 @interface DestinationsViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
@@ -145,7 +146,10 @@ SWIFT_CLASS("_TtC3Map26DestinationsViewController")
 @property (nonatomic, copy) NSString * _Null_unspecified bus;
 @property (nonatomic, copy) NSArray<NSString *> * _Null_unspecified destinations;
 @property (nonatomic, strong) UITableView * _Null_unspecified tableView;
+@property (nonatomic, strong) UIRefreshControl * _Null_unspecified refreshControl;
 - (void)viewDidLoad;
+- (void)refresh_table;
+- (void)refresh:(id _Nonnull)sender;
 - (void)setupTableView;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
@@ -212,11 +216,17 @@ SWIFT_CLASS("_TtC3Map21ShuttleViewController")
 SWIFT_CLASS("_TtC3Map20SubmitViewController")
 @interface SubmitViewController : UIViewController
 @property (nonatomic, copy) NSString * _Null_unspecified bus;
+@property (nonatomic, copy) NSString * _Nonnull apiKey;
+@property (nonatomic, copy) NSString * _Null_unspecified lat;
+@property (nonatomic, copy) NSString * _Null_unspecified lng;
+@property (nonatomic, copy) NSString * _Null_unspecified address;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified addressTextField;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)submitAddress:(id _Nonnull)sender;
+- (void)loadAndSendData:(NSString * _Nonnull)searchText;
+- (void)fetchData:(NSString * _Nonnull)searchText;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
