@@ -6,47 +6,45 @@ provides-nominal:
 provides-member:
 - ["C3Map20SubmitViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "apiKey"
-- "nameLabel"
-- "fetchData"
-- "addressTextField"
-- "bus"
 - "lat"
-- "submitAddress"
-- "address"
-- "lng"
 - "loadAndSendData"
+- "viewDidLoad"
+- "bus"
+- "apiKey"
+- "fetchData"
+- "nameLabel"
+- "address"
 - "didReceiveMemoryWarning"
+- "submitAddress"
+- "lng"
+- "addressTextField"
 depends-top-level:
-- "SubmitViewController"
 - "UILabel"
-- !private "NSData"
-- !private "JSON"
-- !private "!="
-- !private "NSURLRequest"
-- !private "NSURLConnection"
 - !private "UnicodeScalarType"
-- !private "NSURL"
-- !private "BooleanLiteralType"
-- !private "dispatch_get_main_queue"
-- "AnyObject"
-- !private "AfterSubmitViewController"
-- !private "print"
-- "UITextField"
-- "String"
-- "StringLiteralType"
+- "SubmitViewController"
 - "UIViewController"
-- !private "dispatch_get_global_queue"
-- !private "QOS_CLASS_USER_INITIATED"
-- !private "MapViewController"
+- !private "AfterSubmitViewController"
+- !private "BooleanLiteralType"
+- "AnyObject"
+- !private "NSURLRequest"
+- "UITextField"
+- !private "JSON"
+- !private "NSURL"
+- "String"
+- !private "NSData"
+- !private "!="
+- !private "NSURLConnection"
+- !private "dispatch_get_main_queue"
 - !private "dispatch_async"
+- "StringLiteralType"
+- !private "dispatch_get_global_queue"
+- !private "print"
+- !private "QOS_CLASS_USER_INITIATED"
 depends-member:
 - !private ["C3Map25AfterSubmitViewController", "bus"]
 - !private ["C3Map25AfterSubmitViewController", "init"]
 - !private ["Ps9AnyObject", "AfterSubmitViewController"]
 - !private ["Ps9AnyObject", "JSON"]
-- !private ["Ps9AnyObject", "MapViewController"]
 - !private ["Ps9AnyObject", "NSData"]
 - !private ["Ps9AnyObject", "NSURL"]
 - !private ["Ps9AnyObject", "NSURLConnection"]
@@ -121,7 +119,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "JSON"]
-- !private ["Ps11CVarArgType", "MapViewController"]
 - !private ["Ps11CVarArgType", "NSData"]
 - !private ["Ps11CVarArgType", "NSURL"]
 - !private ["Ps11CVarArgType", "NSURLConnection"]
@@ -177,7 +174,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "JSON"]
-- !private ["Ps28CustomDebugStringConvertible", "MapViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "NSData"]
 - !private ["Ps28CustomDebugStringConvertible", "NSURL"]
 - !private ["Ps28CustomDebugStringConvertible", "NSURLConnection"]
@@ -220,7 +216,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "JSON"]
-- !private ["Ps23CustomStringConvertible", "MapViewController"]
 - !private ["Ps23CustomStringConvertible", "NSData"]
 - !private ["Ps23CustomStringConvertible", "NSURL"]
 - !private ["Ps23CustomStringConvertible", "NSURLConnection"]
@@ -272,7 +267,6 @@ depends-member:
 - !private ["Ps9Equatable", "Index"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "JSON"]
-- !private ["Ps9Equatable", "MapViewController"]
 - !private ["Ps9Equatable", "NSData"]
 - !private ["Ps9Equatable", "NSURL"]
 - !private ["Ps9Equatable", "NSURLConnection"]
@@ -335,7 +329,6 @@ depends-member:
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "JSON"]
-- !private ["Ps8Hashable", "MapViewController"]
 - !private ["Ps8Hashable", "NSData"]
 - !private ["Ps8Hashable", "NSURL"]
 - !private ["Ps8Hashable", "NSURLConnection"]
@@ -415,7 +408,6 @@ depends-member:
 - !private ["P3Map17JSONSubscriptType", "IntegerLiteralType"]
 - !private ["P3Map17JSONSubscriptType", "init"]
 - !private ["P3Map17JSONSubscriptType", "stringByReplacingOccurrencesOfString"]
-- !private ["C3Map17MapViewController", "init"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "init"]
@@ -437,7 +429,6 @@ depends-member:
 - !private ["Ps16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "AfterSubmitViewController"]
 - !private ["PSo8NSCoding", "JSON"]
-- !private ["PSo8NSCoding", "MapViewController"]
 - !private ["PSo8NSCoding", "NSData"]
 - !private ["PSo8NSCoding", "NSURL"]
 - !private ["PSo8NSCoding", "NSURLConnection"]
@@ -471,7 +462,6 @@ depends-member:
 - !private ["CSo6NSData", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "AfterSubmitViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "JSON"]
-- !private ["PSo26NSExtensionRequestHandling", "MapViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "NSData"]
 - !private ["PSo26NSExtensionRequestHandling", "NSURL"]
 - !private ["PSo26NSExtensionRequestHandling", "NSURLConnection"]
@@ -503,7 +493,6 @@ depends-member:
 - !private ["CSo8NSObject", "AfterSubmitViewController"]
 - ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "JSON"]
-- !private ["CSo8NSObject", "MapViewController"]
 - !private ["CSo8NSObject", "NSData"]
 - !private ["CSo8NSObject", "NSURL"]
 - !private ["CSo8NSObject", "NSURLConnection"]
@@ -537,7 +526,6 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "AfterSubmitViewController"]
 - !private ["PSo16NSObjectProtocol", "JSON"]
-- !private ["PSo16NSObjectProtocol", "MapViewController"]
 - !private ["PSo16NSObjectProtocol", "NSData"]
 - !private ["PSo16NSObjectProtocol", "NSURL"]
 - !private ["PSo16NSObjectProtocol", "NSURLConnection"]
@@ -646,7 +634,6 @@ depends-member:
 - !private ["C3Map20SubmitViewController", "AfterSubmitViewController"]
 - ["C3Map20SubmitViewController", "AnyObject"]
 - !private ["C3Map20SubmitViewController", "JSON"]
-- !private ["C3Map20SubmitViewController", "MapViewController"]
 - !private ["C3Map20SubmitViewController", "NSData"]
 - !private ["C3Map20SubmitViewController", "NSURL"]
 - !private ["C3Map20SubmitViewController", "NSURLConnection"]
@@ -679,7 +666,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "AfterSubmitViewController"]
 - !private ["PSo21UIAppearanceContainer", "JSON"]
-- !private ["PSo21UIAppearanceContainer", "MapViewController"]
 - !private ["PSo21UIAppearanceContainer", "NSData"]
 - !private ["PSo21UIAppearanceContainer", "NSURL"]
 - !private ["PSo21UIAppearanceContainer", "NSURLConnection"]
@@ -709,7 +695,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "AfterSubmitViewController"]
 - !private ["PSo18UIContentContainer", "JSON"]
-- !private ["PSo18UIContentContainer", "MapViewController"]
 - !private ["PSo18UIContentContainer", "NSData"]
 - !private ["PSo18UIContentContainer", "NSURL"]
 - !private ["PSo18UIContentContainer", "NSURLConnection"]
@@ -741,7 +726,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "AfterSubmitViewController"]
 - !private ["PSo18UIFocusEnvironment", "JSON"]
-- !private ["PSo18UIFocusEnvironment", "MapViewController"]
 - !private ["PSo18UIFocusEnvironment", "NSData"]
 - !private ["PSo18UIFocusEnvironment", "NSURL"]
 - !private ["PSo18UIFocusEnvironment", "NSURLConnection"]
@@ -775,7 +759,6 @@ depends-member:
 - !private ["CSo11UIResponder", "AfterSubmitViewController"]
 - ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "JSON"]
-- !private ["CSo11UIResponder", "MapViewController"]
 - !private ["CSo11UIResponder", "NSData"]
 - !private ["CSo11UIResponder", "NSURL"]
 - !private ["CSo11UIResponder", "NSURLConnection"]
@@ -809,7 +792,6 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "init"]
 - !private ["PSo16UIStateRestoring", "AfterSubmitViewController"]
 - !private ["PSo16UIStateRestoring", "JSON"]
-- !private ["PSo16UIStateRestoring", "MapViewController"]
 - !private ["PSo16UIStateRestoring", "NSData"]
 - !private ["PSo16UIStateRestoring", "NSURL"]
 - !private ["PSo16UIStateRestoring", "NSURLConnection"]
@@ -845,7 +827,6 @@ depends-member:
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["PSo18UITraitEnvironment", "AfterSubmitViewController"]
 - !private ["PSo18UITraitEnvironment", "JSON"]
-- !private ["PSo18UITraitEnvironment", "MapViewController"]
 - !private ["PSo18UITraitEnvironment", "NSData"]
 - !private ["PSo18UITraitEnvironment", "NSURL"]
 - !private ["PSo18UITraitEnvironment", "NSURLConnection"]
@@ -877,7 +858,6 @@ depends-member:
 - !private ["CSo16UIViewController", "AfterSubmitViewController"]
 - ["CSo16UIViewController", "AnyObject"]
 - !private ["CSo16UIViewController", "JSON"]
-- !private ["CSo16UIViewController", "MapViewController"]
 - !private ["CSo16UIViewController", "NSData"]
 - !private ["CSo16UIViewController", "NSURL"]
 - !private ["CSo16UIViewController", "NSURLConnection"]
@@ -1019,7 +999,6 @@ depends-nominal:
 - !private "V3Map13JSONGenerator"
 - !private "V3Map9JSONIndex"
 - !private "P3Map17JSONSubscriptType"
-- !private "C3Map17MapViewController"
 - !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
