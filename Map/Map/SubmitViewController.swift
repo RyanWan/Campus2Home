@@ -31,10 +31,14 @@ class SubmitViewController: UIViewController {
     }
     
     @IBAction func submitAddress(sender: AnyObject) {
-        let address = addressTextField.text?.stringByReplacingOccurrencesOfString(" ", withString: "+") as String?
-        self.loadAndSendData(address!)
-        let detailedVC = MapViewController(nibName: "MapViewController", bundle: nil)
-        navigationController?.pushViewController(detailedVC, animated: true)
+        let addressText = addressTextField.text
+        if (addressText != ""){
+            let address = addressTextField.text?.stringByReplacingOccurrencesOfString(" ", withString: "+") as String?
+            self.loadAndSendData(address!)
+            let detailedVC = MapViewController(nibName: "MapViewController", bundle: nil)
+            navigationController?.pushViewController(detailedVC, animated: true)
+        }
+        
     }
     
     func loadAndSendData(searchText:String){
