@@ -1,0 +1,644 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SubmitViewController"
+provides-nominal:
+- "C3Map20SubmitViewController"
+provides-member:
+- ["C3Map20SubmitViewController", ""]
+provides-dynamic-lookup:
+- "addressTextField"
+- "didReceiveMemoryWarning"
+- "submitAddress"
+- "nameLabel"
+- "viewDidLoad"
+- "bus"
+depends-top-level:
+- "UILabel"
+- "String"
+- "SubmitViewController"
+- !private "print"
+- !private "BooleanLiteralType"
+- !private "NSString"
+- "UITextField"
+- !private "NSUserDefaults"
+- "AnyObject"
+- !private "MapViewController"
+- !private "StringLiteralType"
+- "UIViewController"
+depends-member:
+- !private ["Ps9AnyObject", "MapViewController"]
+- !private ["Ps9AnyObject", "NSString"]
+- !private ["Ps9AnyObject", "NSUserDefaults"]
+- ["Ps9AnyObject", "addressTextField"]
+- ["Ps9AnyObject", "bus"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "nameLabel"]
+- !private ["Ps9AnyObject", "navigationController"]
+- !private ["Ps9AnyObject", "objectForKey"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "pushViewController"]
+- !private ["Ps9AnyObject", "setObject"]
+- !private ["Ps9AnyObject", "standardUserDefaults"]
+- ["Ps9AnyObject", "submitAddress"]
+- !private ["Ps9AnyObject", "synchronize"]
+- !private ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "init"]
+- !private ["Ps23ArrayLiteralConvertible", "Generator"]
+- !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "append"]
+- !private ["Ps23ArrayLiteralConvertible", "init"]
+- !private ["Vs10ArraySlice", "Generator"]
+- !private ["Vs10ArraySlice", "Index"]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "Distance"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "MapViewController"]
+- !private ["Ps11CVarArgType", "NSString"]
+- !private ["Ps11CVarArgType", "NSUserDefaults"]
+- ["Ps11CVarArgType", "addressTextField"]
+- ["Ps11CVarArgType", "bus"]
+- ["Ps11CVarArgType", "didReceiveMemoryWarning"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "nameLabel"]
+- !private ["Ps11CVarArgType", "navigationController"]
+- !private ["Ps11CVarArgType", "objectForKey"]
+- !private ["Ps11CVarArgType", "print"]
+- !private ["Ps11CVarArgType", "pushViewController"]
+- !private ["Ps11CVarArgType", "setObject"]
+- !private ["Ps11CVarArgType", "standardUserDefaults"]
+- ["Ps11CVarArgType", "submitAddress"]
+- !private ["Ps11CVarArgType", "synchronize"]
+- !private ["Ps11CVarArgType", "text"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "append"]
+- !private ["Ps14CollectionType", "init"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "MapViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "NSString"]
+- !private ["Ps28CustomDebugStringConvertible", "NSUserDefaults"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- ["Ps28CustomDebugStringConvertible", "addressTextField"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- ["Ps28CustomDebugStringConvertible", "bus"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "nameLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
+- !private ["Ps28CustomDebugStringConvertible", "objectForKey"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "pushViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "setObject"]
+- !private ["Ps28CustomDebugStringConvertible", "standardUserDefaults"]
+- ["Ps28CustomDebugStringConvertible", "submitAddress"]
+- !private ["Ps28CustomDebugStringConvertible", "synchronize"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "MapViewController"]
+- !private ["Ps23CustomStringConvertible", "NSString"]
+- !private ["Ps23CustomStringConvertible", "NSUserDefaults"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- ["Ps23CustomStringConvertible", "addressTextField"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- ["Ps23CustomStringConvertible", "bus"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "nameLabel"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
+- !private ["Ps23CustomStringConvertible", "objectForKey"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "pushViewController"]
+- !private ["Ps23CustomStringConvertible", "setObject"]
+- !private ["Ps23CustomStringConvertible", "standardUserDefaults"]
+- ["Ps23CustomStringConvertible", "submitAddress"]
+- !private ["Ps23CustomStringConvertible", "synchronize"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "MapViewController"]
+- !private ["Ps9Equatable", "NSString"]
+- !private ["Ps9Equatable", "NSUserDefaults"]
+- ["Ps9Equatable", "addressTextField"]
+- ["Ps9Equatable", "bus"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "nameLabel"]
+- !private ["Ps9Equatable", "navigationController"]
+- !private ["Ps9Equatable", "objectForKey"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "pushViewController"]
+- !private ["Ps9Equatable", "setObject"]
+- !private ["Ps9Equatable", "standardUserDefaults"]
+- ["Ps9Equatable", "submitAddress"]
+- !private ["Ps9Equatable", "synchronize"]
+- !private ["Ps9Equatable", "text"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "Distance"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "MapViewController"]
+- !private ["Ps8Hashable", "NSString"]
+- !private ["Ps8Hashable", "NSUserDefaults"]
+- ["Ps8Hashable", "addressTextField"]
+- ["Ps8Hashable", "bus"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "nameLabel"]
+- !private ["Ps8Hashable", "navigationController"]
+- !private ["Ps8Hashable", "objectForKey"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "pushViewController"]
+- !private ["Ps8Hashable", "setObject"]
+- !private ["Ps8Hashable", "standardUserDefaults"]
+- ["Ps8Hashable", "submitAddress"]
+- !private ["Ps8Hashable", "synchronize"]
+- !private ["Ps8Hashable", "text"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- !private ["Ps9Indexable", "init"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "Distance"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "Distance"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "Distance"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["P3Map17JSONSubscriptType", "Distance"]
+- !private ["P3Map17JSONSubscriptType", "IntegerLiteralType"]
+- !private ["C3Map17MapViewController", "init"]
+- !private ["Ps14MirrorPathType", "Distance"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps21MutableCollectionType", "Generator"]
+- !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "SubSequence"]
+- !private ["Ps21MutableCollectionType", "_Element"]
+- !private ["Ps21MutableCollectionType", "append"]
+- !private ["Ps21MutableCollectionType", "init"]
+- !private ["Ps16MutableIndexable", "Generator"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- !private ["Ps16MutableIndexable", "init"]
+- !private ["Ps16MutableSliceable", "Generator"]
+- !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "SubSequence"]
+- !private ["Ps16MutableSliceable", "_Element"]
+- !private ["Ps16MutableSliceable", "append"]
+- !private ["Ps16MutableSliceable", "init"]
+- !private ["PSo8NSCoding", "MapViewController"]
+- !private ["PSo8NSCoding", "NSString"]
+- !private ["PSo8NSCoding", "NSUserDefaults"]
+- ["PSo8NSCoding", "addressTextField"]
+- ["PSo8NSCoding", "bus"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "nameLabel"]
+- !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "pushViewController"]
+- ["PSo8NSCoding", "submitAddress"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "MapViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "NSString"]
+- !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
+- ["PSo26NSExtensionRequestHandling", "addressTextField"]
+- ["PSo26NSExtensionRequestHandling", "bus"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "nameLabel"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
+- ["PSo26NSExtensionRequestHandling", "submitAddress"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "MapViewController"]
+- !private ["CSo8NSObject", "NSString"]
+- !private ["CSo8NSObject", "NSUserDefaults"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UITextField"]
+- ["CSo8NSObject", "addressTextField"]
+- ["CSo8NSObject", "bus"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "nameLabel"]
+- !private ["CSo8NSObject", "navigationController"]
+- !private ["CSo8NSObject", "objectForKey"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "pushViewController"]
+- !private ["CSo8NSObject", "setObject"]
+- !private ["CSo8NSObject", "standardUserDefaults"]
+- ["CSo8NSObject", "submitAddress"]
+- !private ["CSo8NSObject", "synchronize"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "MapViewController"]
+- !private ["PSo16NSObjectProtocol", "NSString"]
+- !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
+- ["PSo16NSObjectProtocol", "addressTextField"]
+- ["PSo16NSObjectProtocol", "bus"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "nameLabel"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "objectForKey"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "pushViewController"]
+- !private ["PSo16NSObjectProtocol", "setObject"]
+- !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- ["PSo16NSObjectProtocol", "submitAddress"]
+- !private ["PSo16NSObjectProtocol", "synchronize"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo14NSUserDefaults", "objectForKey"]
+- !private ["CSo14NSUserDefaults", "setObject"]
+- !private ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["CSo14NSUserDefaults", "synchronize"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["Ps21RandomAccessIndexType", "Distance"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps30RangeReplaceableCollectionType", "Generator"]
+- !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["Ps30RangeReplaceableCollectionType", "_Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "append"]
+- !private ["Ps30RangeReplaceableCollectionType", "init"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "append"]
+- !private ["Ps12SequenceType", "init"]
+- !private ["Ps17SignedIntegerType", "Distance"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "Distance"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "Distance"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- ["C3Map20SubmitViewController", "AnyObject"]
+- !private ["C3Map20SubmitViewController", "MapViewController"]
+- !private ["C3Map20SubmitViewController", "NSString"]
+- !private ["C3Map20SubmitViewController", "NSUserDefaults"]
+- ["C3Map20SubmitViewController", "String"]
+- ["C3Map20SubmitViewController", "UILabel"]
+- ["C3Map20SubmitViewController", "UITextField"]
+- ["C3Map20SubmitViewController", "addressTextField"]
+- ["C3Map20SubmitViewController", "bus"]
+- ["C3Map20SubmitViewController", "deinit"]
+- ["C3Map20SubmitViewController", "didReceiveMemoryWarning"]
+- ["C3Map20SubmitViewController", "init"]
+- ["C3Map20SubmitViewController", "nameLabel"]
+- !private ["C3Map20SubmitViewController", "navigationController"]
+- !private ["C3Map20SubmitViewController", "print"]
+- ["C3Map20SubmitViewController", "submitAddress"]
+- ["C3Map20SubmitViewController", "viewDidLoad"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "MapViewController"]
+- !private ["PSo21UIAppearanceContainer", "NSString"]
+- !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
+- ["PSo21UIAppearanceContainer", "addressTextField"]
+- ["PSo21UIAppearanceContainer", "bus"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "nameLabel"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "pushViewController"]
+- ["PSo21UIAppearanceContainer", "submitAddress"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "MapViewController"]
+- !private ["PSo18UIContentContainer", "NSString"]
+- !private ["PSo18UIContentContainer", "NSUserDefaults"]
+- ["PSo18UIContentContainer", "addressTextField"]
+- ["PSo18UIContentContainer", "bus"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "nameLabel"]
+- !private ["PSo18UIContentContainer", "navigationController"]
+- !private ["PSo18UIContentContainer", "print"]
+- !private ["PSo18UIContentContainer", "pushViewController"]
+- ["PSo18UIContentContainer", "submitAddress"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "MapViewController"]
+- !private ["PSo18UIFocusEnvironment", "NSString"]
+- !private ["PSo18UIFocusEnvironment", "NSUserDefaults"]
+- ["PSo18UIFocusEnvironment", "addressTextField"]
+- ["PSo18UIFocusEnvironment", "bus"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "nameLabel"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "pushViewController"]
+- ["PSo18UIFocusEnvironment", "submitAddress"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo7UILabel", "text"]
+- !private ["CSo22UINavigationController", "pushViewController"]
+- ["CSo11UIResponder", "AnyObject"]
+- !private ["CSo11UIResponder", "MapViewController"]
+- !private ["CSo11UIResponder", "NSString"]
+- !private ["CSo11UIResponder", "NSUserDefaults"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UITextField"]
+- ["CSo11UIResponder", "addressTextField"]
+- ["CSo11UIResponder", "bus"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "nameLabel"]
+- !private ["CSo11UIResponder", "navigationController"]
+- !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "pushViewController"]
+- ["CSo11UIResponder", "submitAddress"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "MapViewController"]
+- !private ["PSo16UIStateRestoring", "NSString"]
+- !private ["PSo16UIStateRestoring", "NSUserDefaults"]
+- ["PSo16UIStateRestoring", "addressTextField"]
+- ["PSo16UIStateRestoring", "bus"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "nameLabel"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
+- !private ["PSo16UIStateRestoring", "print"]
+- !private ["PSo16UIStateRestoring", "pushViewController"]
+- ["PSo16UIStateRestoring", "submitAddress"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "MapViewController"]
+- !private ["PSo18UITraitEnvironment", "NSString"]
+- !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
+- ["PSo18UITraitEnvironment", "addressTextField"]
+- ["PSo18UITraitEnvironment", "bus"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "nameLabel"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "pushViewController"]
+- ["PSo18UITraitEnvironment", "submitAddress"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "AnyObject"]
+- !private ["CSo16UIViewController", "MapViewController"]
+- !private ["CSo16UIViewController", "NSString"]
+- !private ["CSo16UIViewController", "NSUserDefaults"]
+- ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "UITextField"]
+- ["CSo16UIViewController", "addressTextField"]
+- ["CSo16UIViewController", "bus"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "nameLabel"]
+- !private ["CSo16UIViewController", "navigationController"]
+- !private ["CSo16UIViewController", "print"]
+- !private ["CSo16UIViewController", "pushViewController"]
+- ["CSo16UIViewController", "submitAddress"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps10_ArrayType", "Generator"]
+- !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "SubSequence"]
+- !private ["Ps10_ArrayType", "_Element"]
+- !private ["Ps10_ArrayType", "append"]
+- !private ["Ps10_ArrayType", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps24_DestructorSafeContainer", "Generator"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "Distance"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "Distance"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps22_RandomAccessAmbiguity", "Distance"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "append"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "text"]
+- !private ["Ps18_SignedIntegerType", "Distance"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Vs10ArraySlice"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps16ForwardIndexType"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "Si"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "P3Map17JSONSubscriptType"
+- !private "C3Map17MapViewController"
+- !private "Ps14MirrorPathType"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo8NSString"
+- !private "CSo14NSUserDefaults"
+- "Ps21NilLiteralConvertible"
+- "Sq"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps12SequenceType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Strideable"
+- "C3Map20SubmitViewController"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "CSo7UILabel"
+- !private "CSo22UINavigationController"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps10_ArrayType"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessAmbiguity"
+- "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMapsBase.framework/Headers/GMSCoordinateBounds.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMapsBase.framework/Headers/GMSCompatabilityMacros.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMapsBase.framework/Headers/GoogleMapsBase.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMapsBase.framework/Modules/module.modulemap"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSURLTileLayer.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSTileLayer.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSSyncTileLayer.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSServices.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSPolyline.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSPolygon.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSPanoramaView.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSPanoramaService.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSPanoramaLayer.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSPanoramaCameraUpdate.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSPanoramaCamera.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSPanorama.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSOrientation.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSMutablePath.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSMarkerLayer.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSMarker.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSUISettings.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSMapView.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSMapView+Animation.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSMapLayer.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSIndoorLevel.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSIndoorDisplay.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSIndoorBuilding.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSPath.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSGeometryUtils.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSGeocoder.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSProjection.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSCoordinateBounds+GoogleMaps.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSOverlay.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSCircle.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSCameraUpdate.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSCameraPosition.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSCALayer.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSDeprecationMacros.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GMSAddress.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Headers/GoogleMaps.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GoogleMaps.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSUserAddedPlace.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSPlacesErrors.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSPlacesClient.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSPlaceTypes.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSPlacePhotoMetadataList.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSPlaceLikelihoodList.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSAutocompleteViewController.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSPlace.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSAutocompleteResultsViewController.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSAutocompletePrediction.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSAutocompleteMatchFragment.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSAutocompleteFilter.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSAutocompleteFetcher.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSAddressComponent.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GooglePlaces.h"
+- "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Modules/module.modulemap"
+interface-hash: "43180a11d1e1ea9bf2c18f343ccaf4dc"

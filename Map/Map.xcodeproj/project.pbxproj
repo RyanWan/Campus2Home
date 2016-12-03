@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4783B8531DF24B68001F644E /* DriverShuttleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4783B84D1DF24B68001F644E /* DriverShuttleViewController.swift */; };
+		4783B8541DF24B68001F644E /* DestinationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4783B84E1DF24B68001F644E /* DestinationsViewController.swift */; };
+		4783B8551DF24B68001F644E /* DestinationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4783B84F1DF24B68001F644E /* DestinationsViewController.xib */; };
+		4783B8561DF24B68001F644E /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4783B8501DF24B68001F644E /* SubmitViewController.swift */; };
+		4783B8571DF24B68001F644E /* SubmitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4783B8511DF24B68001F644E /* SubmitViewController.xib */; };
+		4783B8581DF24B68001F644E /* ShuttleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4783B8521DF24B68001F644E /* ShuttleViewController.swift */; };
+		4783B85A1DF24B75001F644E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4783B8591DF24B75001F644E /* ViewController.swift */; };
+		4783B85D1DF24BAE001F644E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4783B85C1DF24BAE001F644E /* Main.storyboard */; };
+		4783B85F1DF25A24001F644E /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4783B85E1DF25A24001F644E /* MapViewController.xib */; };
 		B6CB15121DEFF5A20055333B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CB15111DEFF5A20055333B /* SwiftyJSON.swift */; };
 		B6F80E161DE16FDB00C48040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F80E151DE16FDB00C48040 /* AppDelegate.swift */; };
-		B6F80E181DE16FDB00C48040 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F80E171DE16FDB00C48040 /* ViewController.swift */; };
-		B6F80E1B1DE16FDB00C48040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F80E191DE16FDB00C48040 /* Main.storyboard */; };
+		B6F80E181DE16FDB00C48040 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F80E171DE16FDB00C48040 /* MapViewController.swift */; };
 		B6F80E1D1DE16FDB00C48040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F80E1C1DE16FDB00C48040 /* Assets.xcassets */; };
 		B6F80E201DE16FDB00C48040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F80E1E1DE16FDB00C48040 /* LaunchScreen.storyboard */; };
 		B6F80E321DE1730500C48040 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F80E311DE1730400C48040 /* Accelerate.framework */; };
@@ -35,11 +43,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4783B84D1DF24B68001F644E /* DriverShuttleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverShuttleViewController.swift; sourceTree = "<group>"; };
+		4783B84E1DF24B68001F644E /* DestinationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationsViewController.swift; sourceTree = "<group>"; };
+		4783B84F1DF24B68001F644E /* DestinationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DestinationsViewController.xib; sourceTree = "<group>"; };
+		4783B8501DF24B68001F644E /* SubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
+		4783B8511DF24B68001F644E /* SubmitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitViewController.xib; sourceTree = "<group>"; };
+		4783B8521DF24B68001F644E /* ShuttleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShuttleViewController.swift; sourceTree = "<group>"; };
+		4783B8591DF24B75001F644E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4783B85B1DF24BAE001F644E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4783B85E1DF25A24001F644E /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		B6CB15111DEFF5A20055333B /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		B6F80E121DE16FDB00C48040 /* Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F80E151DE16FDB00C48040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B6F80E171DE16FDB00C48040 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B6F80E1A1DE16FDB00C48040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6F80E171DE16FDB00C48040 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B6F80E1C1DE16FDB00C48040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6F80E1F1DE16FDB00C48040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6F80E211DE16FDB00C48040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,9 +140,17 @@
 		B6F80E141DE16FDB00C48040 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				4783B8591DF24B75001F644E /* ViewController.swift */,
+				4783B84D1DF24B68001F644E /* DriverShuttleViewController.swift */,
+				4783B84E1DF24B68001F644E /* DestinationsViewController.swift */,
+				4783B84F1DF24B68001F644E /* DestinationsViewController.xib */,
+				4783B8501DF24B68001F644E /* SubmitViewController.swift */,
+				4783B85C1DF24BAE001F644E /* Main.storyboard */,
+				4783B8511DF24B68001F644E /* SubmitViewController.xib */,
+				4783B8521DF24B68001F644E /* ShuttleViewController.swift */,
 				B6F80E151DE16FDB00C48040 /* AppDelegate.swift */,
-				B6F80E171DE16FDB00C48040 /* ViewController.swift */,
-				B6F80E191DE16FDB00C48040 /* Main.storyboard */,
+				B6F80E171DE16FDB00C48040 /* MapViewController.swift */,
+				4783B85E1DF25A24001F644E /* MapViewController.xib */,
 				B6CB15111DEFF5A20055333B /* SwiftyJSON.swift */,
 				B6F80E1C1DE16FDB00C48040 /* Assets.xcassets */,
 				B6F80E1E1DE16FDB00C48040 /* LaunchScreen.storyboard */,
@@ -199,9 +223,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4783B85D1DF24BAE001F644E /* Main.storyboard in Resources */,
 				B6F80E201DE16FDB00C48040 /* LaunchScreen.storyboard in Resources */,
+				4783B8551DF24B68001F644E /* DestinationsViewController.xib in Resources */,
+				4783B85F1DF25A24001F644E /* MapViewController.xib in Resources */,
+				4783B8571DF24B68001F644E /* SubmitViewController.xib in Resources */,
 				B6F80E1D1DE16FDB00C48040 /* Assets.xcassets in Resources */,
-				B6F80E1B1DE16FDB00C48040 /* Main.storyboard in Resources */,
 				B6F80E4E1DE1769E00C48040 /* GooglePlaces.bundle in Resources */,
 				B6F80E581DE1771700C48040 /* GoogleMaps.bundle in Resources */,
 			);
@@ -214,8 +241,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4783B8531DF24B68001F644E /* DriverShuttleViewController.swift in Sources */,
 				B6CB15121DEFF5A20055333B /* SwiftyJSON.swift in Sources */,
-				B6F80E181DE16FDB00C48040 /* ViewController.swift in Sources */,
+				4783B8541DF24B68001F644E /* DestinationsViewController.swift in Sources */,
+				4783B8581DF24B68001F644E /* ShuttleViewController.swift in Sources */,
+				B6F80E181DE16FDB00C48040 /* MapViewController.swift in Sources */,
+				4783B8561DF24B68001F644E /* SubmitViewController.swift in Sources */,
+				4783B85A1DF24B75001F644E /* ViewController.swift in Sources */,
 				B6F80E161DE16FDB00C48040 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,12 +255,13 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B6F80E191DE16FDB00C48040 /* Main.storyboard */ = {
+		4783B85C1DF24BAE001F644E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B6F80E1A1DE16FDB00C48040 /* Base */,
+				4783B85B1DF24BAE001F644E /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../../../Shuttle2Home/Shuttle2Home;
 			sourceTree = "<group>";
 		};
 		B6F80E1E1DE16FDB00C48040 /* LaunchScreen.storyboard */ = {
