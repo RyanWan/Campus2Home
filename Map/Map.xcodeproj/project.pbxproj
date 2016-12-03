@@ -16,6 +16,8 @@
 		4783B85A1DF24B75001F644E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4783B8591DF24B75001F644E /* ViewController.swift */; };
 		4783B85F1DF25A24001F644E /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4783B85E1DF25A24001F644E /* MapViewController.xib */; };
 		4783B8641DF25F03001F644E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4783B8631DF25F03001F644E /* Main.storyboard */; };
+		4783B8671DF264C6001F644E /* AfterSubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4783B8651DF264C6001F644E /* AfterSubmitViewController.swift */; };
+		4783B8681DF264C6001F644E /* AfterSubmitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4783B8661DF264C6001F644E /* AfterSubmitViewController.xib */; };
 		B6CB15121DEFF5A20055333B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CB15111DEFF5A20055333B /* SwiftyJSON.swift */; };
 		B6F80E161DE16FDB00C48040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F80E151DE16FDB00C48040 /* AppDelegate.swift */; };
 		B6F80E181DE16FDB00C48040 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F80E171DE16FDB00C48040 /* MapViewController.swift */; };
@@ -52,6 +54,8 @@
 		4783B8591DF24B75001F644E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4783B85E1DF25A24001F644E /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		4783B8631DF25F03001F644E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4783B8651DF264C6001F644E /* AfterSubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfterSubmitViewController.swift; sourceTree = "<group>"; };
+		4783B8661DF264C6001F644E /* AfterSubmitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AfterSubmitViewController.xib; sourceTree = "<group>"; };
 		B6CB15111DEFF5A20055333B /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		B6F80E121DE16FDB00C48040 /* Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F80E151DE16FDB00C48040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 				4783B84F1DF24B68001F644E /* DestinationsViewController.xib */,
 				4783B8501DF24B68001F644E /* SubmitViewController.swift */,
 				4783B8631DF25F03001F644E /* Main.storyboard */,
+				4783B8651DF264C6001F644E /* AfterSubmitViewController.swift */,
+				4783B8661DF264C6001F644E /* AfterSubmitViewController.xib */,
 				4783B8511DF24B68001F644E /* SubmitViewController.xib */,
 				4783B8521DF24B68001F644E /* ShuttleViewController.swift */,
 				B6F80E151DE16FDB00C48040 /* AppDelegate.swift */,
@@ -224,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6F80E201DE16FDB00C48040 /* LaunchScreen.storyboard in Resources */,
+				4783B8681DF264C6001F644E /* AfterSubmitViewController.xib in Resources */,
 				4783B8551DF24B68001F644E /* DestinationsViewController.xib in Resources */,
 				4783B85F1DF25A24001F644E /* MapViewController.xib in Resources */,
 				4783B8641DF25F03001F644E /* Main.storyboard in Resources */,
@@ -244,6 +251,7 @@
 				4783B8531DF24B68001F644E /* DriverShuttleViewController.swift in Sources */,
 				B6CB15121DEFF5A20055333B /* SwiftyJSON.swift in Sources */,
 				4783B8541DF24B68001F644E /* DestinationsViewController.swift in Sources */,
+				4783B8671DF264C6001F644E /* AfterSubmitViewController.swift in Sources */,
 				4783B8581DF24B68001F644E /* ShuttleViewController.swift in Sources */,
 				B6F80E181DE16FDB00C48040 /* MapViewController.swift in Sources */,
 				4783B8561DF24B68001F644E /* SubmitViewController.swift in Sources */,

@@ -6,101 +6,248 @@ provides-nominal:
 provides-member:
 - ["C3Map14ViewController", ""]
 provides-dynamic-lookup:
+- "passengerButton"
 - "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "driverButton"
 depends-top-level:
+- !private "UIColor"
 - "UIViewController"
+- "UIButton"
+- !private "/"
 - "ViewController"
 depends-member:
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "backgroundColor"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- ["Ps9AnyObject", "driverButton"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "lightTextColor"]
+- ["Ps9AnyObject", "passengerButton"]
+- !private ["Ps9AnyObject", "setTitleColor"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
+- !private ["Ps23ArrayLiteralConvertible", "Normal"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps11CVarArgType", "UIColor"]
+- !private ["Ps11CVarArgType", "backgroundColor"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
+- ["Ps11CVarArgType", "driverButton"]
 - ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "lightTextColor"]
+- ["Ps11CVarArgType", "passengerButton"]
+- !private ["Ps11CVarArgType", "setTitleColor"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "driverButton"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "lightTextColor"]
+- ["Ps28CustomDebugStringConvertible", "passengerButton"]
+- !private ["Ps28CustomDebugStringConvertible", "setTitleColor"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "driverButton"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "lightTextColor"]
+- ["Ps23CustomStringConvertible", "passengerButton"]
+- !private ["Ps23CustomStringConvertible", "setTitleColor"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Normal"]
+- !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "backgroundColor"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
+- ["Ps9Equatable", "driverButton"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "lightTextColor"]
+- ["Ps9Equatable", "passengerButton"]
+- !private ["Ps9Equatable", "setTitleColor"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "backgroundColor"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
+- ["Ps8Hashable", "driverButton"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "lightTextColor"]
+- ["Ps8Hashable", "passengerButton"]
+- !private ["Ps8Hashable", "setTitleColor"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "backgroundColor"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "driverButton"]
 - ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "lightTextColor"]
+- ["PSo8NSCoding", "passengerButton"]
+- !private ["PSo8NSCoding", "setTitleColor"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "lightTextColor"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "driverButton"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "passengerButton"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "backgroundColor"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "driverButton"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "lightTextColor"]
+- ["CSo8NSObject", "passengerButton"]
+- !private ["CSo8NSObject", "setTitleColor"]
 - ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "driverButton"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "lightTextColor"]
+- ["PSo16NSObjectProtocol", "passengerButton"]
+- !private ["PSo16NSObjectProtocol", "setTitleColor"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "lightTextColor"]
+- !private ["Ps13OptionSetType", "Normal"]
+- !private ["Ps16RawRepresentable", "Normal"]
+- !private ["Ps14SetAlgebraType", "Normal"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo29UIAccessibilityIdentification", "setTitleColor"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo12UIAppearance", "setTitleColor"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "driverButton"]
 - ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "passengerButton"]
+- !private ["PSo21UIAppearanceContainer", "setTitleColor"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "backgroundColor"]
+- !private ["CSo8UIButton", "setTitleColor"]
+- !private ["CSo7UIColor", "init"]
+- !private ["CSo7UIColor", "lightTextColor"]
+- !private ["PSo18UIContentContainer", "UIColor"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "driverButton"]
 - ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "passengerButton"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "backgroundColor"]
+- !private ["CSo9UIControl", "setTitleColor"]
+- !private ["VSC14UIControlState", "Normal"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo17UICoordinateSpace", "setTitleColor"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "setTitleColor"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "driverButton"]
 - ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "passengerButton"]
+- !private ["PSo18UIFocusEnvironment", "setTitleColor"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "driverButton"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "passengerButton"]
+- !private ["CSo11UIResponder", "setTitleColor"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "driverButton"]
 - ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "passengerButton"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "driverButton"]
 - ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "passengerButton"]
+- !private ["PSo18UITraitEnvironment", "setTitleColor"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo6UIView", "setTitleColor"]
+- ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIColor"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "driverButton"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "passengerButton"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- ["C3Map14ViewController", "UIButton"]
+- !private ["C3Map14ViewController", "UIColor"]
 - ["C3Map14ViewController", "deinit"]
 - ["C3Map14ViewController", "didReceiveMemoryWarning"]
+- ["C3Map14ViewController", "driverButton"]
 - ["C3Map14ViewController", "init"]
+- ["C3Map14ViewController", "passengerButton"]
 - ["C3Map14ViewController", "viewDidLoad"]
+- !private ["Ps24_ColorLiteralConvertible", "init"]
+- !private ["Ps24_ColorLiteralConvertible", "lightTextColor"]
+- !private ["Ps12_Reflectable", "backgroundColor"]
+- !private ["Ps12_Reflectable", "setTitleColor"]
 depends-nominal:
 - "Ps9AnyObject"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "V12CoreGraphics7CGFloat"
 - "Ps11CVarArgType"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
 - "Ps8Hashable"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "Ps13OptionSetType"
+- !private "Ps16RawRepresentable"
+- !private "Ps14SetAlgebraType"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
+- !private "CSo7UIColor"
 - "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "VSC14UIControlState"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - "CSo11UIResponder"
 - "PSo16UIStateRestoring"
 - "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
 - "CSo16UIViewController"
 - "C3Map14ViewController"
+- !private "Ps24_ColorLiteralConvertible"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -174,4 +321,4 @@ depends-external:
 - "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSAddressComponent.h"
 - "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GooglePlaces.h"
 - "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Modules/module.modulemap"
-interface-hash: "2273e0b6560749631899e82af2412a52"
+interface-hash: "889c2335893ba98db57d01b0d684f457"

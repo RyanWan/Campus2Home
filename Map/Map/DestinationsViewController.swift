@@ -10,11 +10,15 @@ import UIKit
 
 class DestinationsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var planRouteButton: UIButton!
     var bus: String!
     var destinations: [String]!
     var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let buttonColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
+        planRouteButton.backgroundColor = buttonColor
+        planRouteButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         setupTableView()
         // Do any additional setup after loading the view.
     }
@@ -41,10 +45,13 @@ class DestinationsViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
+        let addressIcon = UIImage(named: "AddressIcon")
         
         let cell = UITableViewCell(style: .Subtitle, reuseIdentifier: "cell")
+        cell.imageView?.image = addressIcon
         cell.textLabel!.text = destinations[indexPath.row]
+//        cell.textLabel?.textColor = UIColor.whiteColor()
+//        cell.backgroundColor = UIColor(red: 52/255, green: 152/255, blue: 219/255, alpha: 1.0)
         
         return cell
     }

@@ -7,26 +7,28 @@ provides-member:
 - ["C3Map20SubmitViewController", ""]
 provides-dynamic-lookup:
 - "addressTextField"
-- "didReceiveMemoryWarning"
 - "submitAddress"
-- "nameLabel"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 - "bus"
+- "nameLabel"
 depends-top-level:
-- "UILabel"
-- "String"
-- "SubmitViewController"
-- !private "print"
 - !private "BooleanLiteralType"
-- !private "NSString"
-- "UITextField"
-- !private "NSUserDefaults"
-- "AnyObject"
-- !private "MapViewController"
-- !private "StringLiteralType"
 - "UIViewController"
+- !private "AfterSubmitViewController"
+- "AnyObject"
+- "SubmitViewController"
+- "UILabel"
+- !private "NSUserDefaults"
+- !private "StringLiteralType"
+- "UITextField"
+- "String"
+- !private "NSString"
+- !private "print"
 depends-member:
-- !private ["Ps9AnyObject", "MapViewController"]
+- !private ["C3Map25AfterSubmitViewController", "bus"]
+- !private ["C3Map25AfterSubmitViewController", "init"]
+- !private ["Ps9AnyObject", "AfterSubmitViewController"]
 - !private ["Ps9AnyObject", "NSString"]
 - !private ["Ps9AnyObject", "NSUserDefaults"]
 - ["Ps9AnyObject", "addressTextField"]
@@ -64,9 +66,9 @@ depends-member:
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
 - !private ["Ps21BitwiseOperationsType", "Distance"]
 - !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "AfterSubmitViewController"]
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
-- !private ["Ps11CVarArgType", "MapViewController"]
 - !private ["Ps11CVarArgType", "NSString"]
 - !private ["Ps11CVarArgType", "NSUserDefaults"]
 - ["Ps11CVarArgType", "addressTextField"]
@@ -93,9 +95,9 @@ depends-member:
 - !private ["Ps14CollectionType", "init"]
 - !private ["Ps10Comparable", "Distance"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps28CustomDebugStringConvertible", "AfterSubmitViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
-- !private ["Ps28CustomDebugStringConvertible", "MapViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "NSString"]
 - !private ["Ps28CustomDebugStringConvertible", "NSUserDefaults"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
@@ -118,11 +120,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "AfterSubmitViewController"]
 - !private ["Ps23CustomStringConvertible", "Distance"]
 - !private ["Ps23CustomStringConvertible", "Generator"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
-- !private ["Ps23CustomStringConvertible", "MapViewController"]
 - !private ["Ps23CustomStringConvertible", "NSString"]
 - !private ["Ps23CustomStringConvertible", "NSUserDefaults"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
@@ -144,9 +146,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "AfterSubmitViewController"]
 - !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
-- !private ["Ps9Equatable", "MapViewController"]
 - !private ["Ps9Equatable", "NSString"]
 - !private ["Ps9Equatable", "NSUserDefaults"]
 - ["Ps9Equatable", "addressTextField"]
@@ -168,9 +170,9 @@ depends-member:
 - !private ["Ps16ForwardIndexType", "Distance"]
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "AfterSubmitViewController"]
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
-- !private ["Ps8Hashable", "MapViewController"]
 - !private ["Ps8Hashable", "NSString"]
 - !private ["Ps8Hashable", "NSUserDefaults"]
 - ["Ps8Hashable", "addressTextField"]
@@ -206,7 +208,6 @@ depends-member:
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
 - !private ["P3Map17JSONSubscriptType", "Distance"]
 - !private ["P3Map17JSONSubscriptType", "IntegerLiteralType"]
-- !private ["C3Map17MapViewController", "init"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps21MutableCollectionType", "Generator"]
@@ -227,7 +228,7 @@ depends-member:
 - !private ["Ps16MutableSliceable", "_Element"]
 - !private ["Ps16MutableSliceable", "append"]
 - !private ["Ps16MutableSliceable", "init"]
-- !private ["PSo8NSCoding", "MapViewController"]
+- !private ["PSo8NSCoding", "AfterSubmitViewController"]
 - !private ["PSo8NSCoding", "NSString"]
 - !private ["PSo8NSCoding", "NSUserDefaults"]
 - ["PSo8NSCoding", "addressTextField"]
@@ -242,7 +243,7 @@ depends-member:
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo26NSExtensionRequestHandling", "MapViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "AfterSubmitViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "NSString"]
 - !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
 - ["PSo26NSExtensionRequestHandling", "addressTextField"]
@@ -256,8 +257,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "submitAddress"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo8NSObject", "AfterSubmitViewController"]
 - ["CSo8NSObject", "AnyObject"]
-- !private ["CSo8NSObject", "MapViewController"]
 - !private ["CSo8NSObject", "NSString"]
 - !private ["CSo8NSObject", "NSUserDefaults"]
 - ["CSo8NSObject", "String"]
@@ -278,7 +279,7 @@ depends-member:
 - !private ["CSo8NSObject", "synchronize"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "viewDidLoad"]
-- !private ["PSo16NSObjectProtocol", "MapViewController"]
+- !private ["PSo16NSObjectProtocol", "AfterSubmitViewController"]
 - !private ["PSo16NSObjectProtocol", "NSString"]
 - !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
 - ["PSo16NSObjectProtocol", "addressTextField"]
@@ -326,8 +327,8 @@ depends-member:
 - !private ["Ps16SignedNumberType", "IntegerLiteralType"]
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["C3Map20SubmitViewController", "AfterSubmitViewController"]
 - ["C3Map20SubmitViewController", "AnyObject"]
-- !private ["C3Map20SubmitViewController", "MapViewController"]
 - !private ["C3Map20SubmitViewController", "NSString"]
 - !private ["C3Map20SubmitViewController", "NSUserDefaults"]
 - ["C3Map20SubmitViewController", "String"]
@@ -345,7 +346,7 @@ depends-member:
 - ["C3Map20SubmitViewController", "viewDidLoad"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "text"]
-- !private ["PSo21UIAppearanceContainer", "MapViewController"]
+- !private ["PSo21UIAppearanceContainer", "AfterSubmitViewController"]
 - !private ["PSo21UIAppearanceContainer", "NSString"]
 - !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
 - ["PSo21UIAppearanceContainer", "addressTextField"]
@@ -360,7 +361,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["PSo18UIContentContainer", "MapViewController"]
+- !private ["PSo18UIContentContainer", "AfterSubmitViewController"]
 - !private ["PSo18UIContentContainer", "NSString"]
 - !private ["PSo18UIContentContainer", "NSUserDefaults"]
 - ["PSo18UIContentContainer", "addressTextField"]
@@ -376,7 +377,7 @@ depends-member:
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "text"]
-- !private ["PSo18UIFocusEnvironment", "MapViewController"]
+- !private ["PSo18UIFocusEnvironment", "AfterSubmitViewController"]
 - !private ["PSo18UIFocusEnvironment", "NSString"]
 - !private ["PSo18UIFocusEnvironment", "NSUserDefaults"]
 - ["PSo18UIFocusEnvironment", "addressTextField"]
@@ -393,8 +394,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo22UINavigationController", "pushViewController"]
+- !private ["CSo11UIResponder", "AfterSubmitViewController"]
 - ["CSo11UIResponder", "AnyObject"]
-- !private ["CSo11UIResponder", "MapViewController"]
 - !private ["CSo11UIResponder", "NSString"]
 - !private ["CSo11UIResponder", "NSUserDefaults"]
 - ["CSo11UIResponder", "String"]
@@ -411,7 +412,9 @@ depends-member:
 - ["CSo11UIResponder", "submitAddress"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "viewDidLoad"]
-- !private ["PSo16UIStateRestoring", "MapViewController"]
+- !private ["PSo20UIScrollViewDelegate", "bus"]
+- !private ["PSo20UIScrollViewDelegate", "init"]
+- !private ["PSo16UIStateRestoring", "AfterSubmitViewController"]
 - !private ["PSo16UIStateRestoring", "NSString"]
 - !private ["PSo16UIStateRestoring", "NSUserDefaults"]
 - ["PSo16UIStateRestoring", "addressTextField"]
@@ -425,7 +428,11 @@ depends-member:
 - ["PSo16UIStateRestoring", "submitAddress"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
-- !private ["PSo18UITraitEnvironment", "MapViewController"]
+- !private ["PSo21UITableViewDataSource", "bus"]
+- !private ["PSo21UITableViewDataSource", "init"]
+- !private ["PSo19UITableViewDelegate", "bus"]
+- !private ["PSo19UITableViewDelegate", "init"]
+- !private ["PSo18UITraitEnvironment", "AfterSubmitViewController"]
 - !private ["PSo18UITraitEnvironment", "NSString"]
 - !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
 - ["PSo18UITraitEnvironment", "addressTextField"]
@@ -441,8 +448,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "text"]
+- !private ["CSo16UIViewController", "AfterSubmitViewController"]
 - ["CSo16UIViewController", "AnyObject"]
-- !private ["CSo16UIViewController", "MapViewController"]
 - !private ["CSo16UIViewController", "NSString"]
 - !private ["CSo16UIViewController", "NSUserDefaults"]
 - ["CSo16UIViewController", "String"]
@@ -502,6 +509,7 @@ depends-member:
 - !private ["Ps18_SignedIntegerType", "Distance"]
 - !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 depends-nominal:
+- !private "C3Map25AfterSubmitViewController"
 - "Ps9AnyObject"
 - !private "Sa"
 - !private "Ps23ArrayLiteralConvertible"
@@ -524,7 +532,6 @@ depends-nominal:
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
 - !private "P3Map17JSONSubscriptType"
-- !private "C3Map17MapViewController"
 - !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
@@ -554,7 +561,10 @@ depends-nominal:
 - !private "CSo7UILabel"
 - !private "CSo22UINavigationController"
 - "CSo11UIResponder"
+- !private "PSo20UIScrollViewDelegate"
 - "PSo16UIStateRestoring"
+- !private "PSo21UITableViewDataSource"
+- !private "PSo19UITableViewDelegate"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"

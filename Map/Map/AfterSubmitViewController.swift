@@ -1,0 +1,79 @@
+//
+//  AfterSubmitViewController.swift
+//  Map
+//
+//  Created by WENG on 16/12/2.
+//  Copyright © 2016年 Ryan Wan. All rights reserved.
+//
+
+import UIKit
+
+class AfterSubmitViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var planRouteButton: UIButton!
+    var bus: String!
+    var destinations: [String]!
+    var tableView: UITableView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.destinations = ["olive", "pershing", "waterman"];
+        let buttonColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
+        planRouteButton.backgroundColor = buttonColor
+        planRouteButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        setupTableView()
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    func setupTableView() {
+        
+        tableView = UITableView(frame: view.frame.offsetBy(dx:0, dy: 100))
+        tableView.frame = CGRectMake(0, 70, self.view.frame.size.width, self.view.frame.height * 0.7);
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        view.addSubview(tableView)
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return destinations.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let addressIcon = UIImage(named: "AddressIcon")
+        let cell = UITableViewCell(style: .Subtitle, reuseIdentifier: "cell")
+        cell.imageView?.image = addressIcon
+        cell.textLabel!.text = destinations[indexPath.row]
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //        let detailedVC = MapViewController(nibName: "MapViewController", bundle: nil)
+        //        navigationController?.pushViewController(detailedVC, animated: true)
+        
+    }
+    
+    @IBAction func startPlanRoute(sender: AnyObject) {
+        let detailedVC = MapViewController(nibName: "MapViewController", bundle: nil)
+        navigationController?.pushViewController(detailedVC, animated: true)
+    }
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
+}

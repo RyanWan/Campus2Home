@@ -43,7 +43,8 @@ class SubmitViewController: UIViewController {
             print(readArray)
         }
         
-        let detailedVC = MapViewController(nibName: "MapViewController", bundle: nil)
+        let detailedVC = AfterSubmitViewController(nibName: "AfterSubmitViewController", bundle: nil)
+        detailedVC.bus = self.bus
         navigationController?.pushViewController(detailedVC, animated: true)
     }
 
