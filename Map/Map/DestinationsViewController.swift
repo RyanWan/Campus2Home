@@ -36,16 +36,18 @@ class DestinationsViewController: UIViewController, UITableViewDataSource, UITab
             data = try NSURLConnection.sendSynchronousRequest(request, returningResponse: nil)
             print ("Finished")
             let json = JSON(data: data)
-            print("json is \(json)")
-            var lists = json["address"]
+//            print("json is \(json)")
+            var lists = json["address"].arrayValue
             destinations.removeAll()
             
             for item in lists{
-                destinations.append(String(item))
+                
+                destinations.append(item.stringValue)
             }
         } catch{
             print ("FAULTED")
         }
+        tableView.reloadData()
     }
     func refresh(sender:AnyObject){
         
