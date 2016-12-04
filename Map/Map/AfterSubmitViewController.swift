@@ -9,7 +9,7 @@
 import UIKit
 
 class AfterSubmitViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+    var refreshControl: UIRefreshControl!
     @IBOutlet weak var planRouteButton: UIButton!
     var bus: String!
     var destinations: [String]!
@@ -20,9 +20,43 @@ class AfterSubmitViewController: UIViewController, UITableViewDataSource, UITabl
         let buttonColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
         planRouteButton.backgroundColor = buttonColor
         planRouteButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        refreshControl = UIRefreshControl()
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
         setupTableView()
+        tableView.addSubview(refreshControl)
         
         // Do any additional setup after loading the view.
+    }
+    func refresh_table(){
+        var url:NSURL?
+        url = NSURL(string: "http://localhost:5000/receive/\(bus)/update")
+        let request = NSURLRequest(URL: url!)
+        
+        var data:NSData
+        do {
+            data = try NSURLConnection.sendSynchronousRequest(request, returningResponse: nil)
+            print ("Finished")
+            let json = JSON(data: data)
+            //            print("json is \(json)")
+            var lists = json["address"].arrayValue
+            destinations.removeAll()
+            
+            for item in lists{
+                
+                destinations.append(item.stringValue)
+            }
+        } catch{
+            print ("FAULTED")
+        }
+        tableView.reloadData()
+    }
+    func refresh(sender:AnyObject){
+        
+        print("REFRESHING")
+        refresh_table()
+        print("REFRESHING FINISHED")
+        refreshControl.endRefreshing()
     }
     
     func setupTableView() {
@@ -33,7 +67,7 @@ class AfterSubmitViewController: UIViewController, UITableViewDataSource, UITabl
         tableView.delegate = self
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         view.addSubview(tableView)
-        
+        refresh_table()
     }
     
     override func didReceiveMemoryWarning() {

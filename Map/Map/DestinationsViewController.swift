@@ -70,7 +70,7 @@ class DestinationsViewController: UIViewController, UITableViewDataSource, UITab
        
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         view.addSubview(tableView)
-        
+        refresh_table()
     }
 
     override func didReceiveMemoryWarning() {
