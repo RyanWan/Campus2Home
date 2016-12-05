@@ -116,10 +116,10 @@ class AfterSubmitViewController: UIViewController, UITableViewDataSource, UITabl
                     if let address = item["address"] as? String {
                         d.address = address
                     }
-                    if let x = item["x"] as? Int {
+                    if let x = item["x"] as? Double {
                         d.x = x
                     }
-                    if let y = item["y"] as? Int {
+                    if let y = item["y"] as? Double {
                         d.y = y
                     }
                 }

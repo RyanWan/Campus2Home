@@ -14,9 +14,9 @@ class MapViewController: UIViewController {
     
     var address = "605+Leland+Ave,MO"
     var apiKey = "AIzaSyA-zNnojD_2V81XAKp-AShKGNb32bRwtfI"
-    var destinations:[Destination]
-    var markers:[GMSMarker]
-    var flag:Bool
+    var destinations:[Destination] = []
+    var markers:[GMSMarker] = []
+    var flag:Bool = false
     
     
     //api key for geocoding:AIzaSyA-zNnojD_2V81XAKp-AShKGNb32bRwtfI
