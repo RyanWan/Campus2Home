@@ -108,17 +108,37 @@ class DestinationsViewController: UIViewController, UITableViewDataSource, UITab
         let request = NSURLRequest(URL: url!)
         
         var data:NSData
+        var destinations: [Destination] = []
         do {
             data = try NSURLConnection.sendSynchronousRequest(request, returningResponse: nil)
             print ("Finished")
             let json = JSON(data: data)
             print("json is \(json)")
             var route = json["route"]
+            for i in 0...route.count {
+                var d:Destination! = Destination()
+                
+                if let item = route[i] as? [String: AnyObject] {
+                    if let address = item["address"] as? String {
+                        d.address = address
+                    }
+                    if let x = item["x"] as? Int {
+                        d.x = x
+                    }
+                    if let y = item["y"] as? Int {
+                        d.y = y
+                    }
+                }
+                destinations.append(d)
+
+            }
         } catch{
             print ("FAULTED")
         }
         
         let detailedVC = MapViewController(nibName: "MapViewController", bundle: nil)
+        detailedVC.flag = true
+        detailedVC.destinations = destinations
         navigationController?.pushViewController(detailedVC, animated: true)
     }
     /*
