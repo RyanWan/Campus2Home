@@ -14,6 +14,10 @@ class MapViewController: UIViewController {
     
     var address = "605+Leland+Ave,MO"
     var apiKey = "AIzaSyA-zNnojD_2V81XAKp-AShKGNb32bRwtfI"
+    var destinations:[Destination]
+    var markers:[GMSMarker]
+    var flag:Bool
+    
     
     //api key for geocoding:AIzaSyA-zNnojD_2V81XAKp-AShKGNb32bRwtfI
 
@@ -22,12 +26,11 @@ class MapViewController: UIViewController {
     
     override func loadView() {
 
-        // Create a GMSCameraPosition that tells the map to display the
-        // coordinate -33.86,151.20 at zoom level 6.
+        // Create a GMSCameraPosition
         let camera = GMSCameraPosition.cameraWithLatitude(38.648342, longitude: -90.311463, zoom: 16.0)
         let mapView = GMSMapView.mapWithFrame(CGRect.zero, camera: camera)
-//        mapView.frame = CGRectMake(0, 70, self.view.frame.size.width, self.view.frame.height * 0.7);
         mapView.myLocationEnabled = true
+        //creat the plan route button
         let button = UIButton(frame: CGRectMake(160, 600, 80, 40))
         button.backgroundColor = UIColor.lightGrayColor()
         button.setTitle("Next", forState: .Normal)
@@ -37,83 +40,44 @@ class MapViewController: UIViewController {
         view = mapView
         
         
-        // Creates a marker in the center of the map.
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: 38.648342, longitude:-90.311463)
-        marker.title = "1"
-        //marker.tracksInfoWindowChanges
-        marker.map = mapView
-        mapView.selectedMarker = marker
+        // Creates markers
+        for index in 0...destinations.count-2 {
+            let dest = destinations[index]
+            let marker = GMSMarker()
+            marker.position = CLLocationCoordinate2D(latitude: dest.x, longitude:dest.y)
+            marker.title = "\(index)"
+            marker.map = mapView
+            markers.append(marker)
         
-        let marker2 = GMSMarker()
-        marker2.position = CLLocationCoordinate2D(latitude: 38.647698,longitude:-90.309694)
-        marker2.title = "2"
-        marker2.map = mapView
-        mapView.selectedMarker = marker2
+        }
+        mapView.selectedMarker = markers[1]
         
-        let path = GMSMutablePath()
-        path.addCoordinate(CLLocationCoordinate2D(latitude: 38.648342, longitude: -90.311463))
-        path.addCoordinate(CLLocationCoordinate2D(latitude:38.647698, longitude: -90.309694))
-        let polyline = GMSPolyline(path: path)
-        polyline.map = mapView
+        //draw route
+        if (flag){
+            let path = GMSMutablePath()
+            for index in 0...destinations.count-1 {
+                let dest = destinations[index]
+                path.addCoordinate(CLLocationCoordinate2D(latitude: dest.x, longitude: dest.y))
+            }
+            let polyline = GMSPolyline(path: path)
+            polyline.map = mapView
+        }
+
         
         
-        loadData(self.address)
-        
-//        let navBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: 320, height: 44))
-//        self.view.addSubview(navBar);
-//        let navItem = UINavigationItem(title: "SomeTitle");
-//        let doneItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Done, target: nil, action: "selector");
-//        navItem.rightBarButtonItem = doneItem;
-//        navBar.setItems([navItem], animated: false);
+
     }
     
     func nextButtonClicked(sender:UIButton!) {
+        destinations.removeAtIndex(1)
+        markers.removeAtIndex(1)
+        for index in 1...markers.count-1{
+            markers[index].title = "\(Int(markers[index].title!)!-1)"
+        }
+        
         print("Button Clicked")
     }
     
-    func loadData(searchText:String){
-        dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED,0)){
-            
-            self.fetchData(self.address)
-            
-            dispatch_async(dispatch_get_main_queue()){
-                
-                print("Done")
-            }
-        }
-    }
-    
-    func fetchData(searchText:String){
-        let json = getJSON("https://maps.googleapis.com/maps/api/geocode/json?address=\(searchText)&key=\(self.apiKey)")
-        let jsonContent = json["results"].arrayValue
-        
-        if (jsonContent.count != 0){
-            let result = jsonContent[0]
-            let formatted_address = result["formatted_address"].stringValue
-            let lat = result["geometry"]["location"]["lat"]
-            let lng = result["geometry"]["location"]["lng"]
-            print(formatted_address)
-            print(lat)
-            print(lng)
-        }else {
-            print("no result found")
-        }
-        
-//        let jsonContent = json["Search"].arrayValue
-//        for result in jsonContent {
-//            let title = result["Title"].stringValue
-//            let year = result["Year"].stringValue
-//            let url = result["Poster"].stringValue
-//            let id = result["imdbID"].stringValue
-//            let type = result["Type"].stringValue
-//            theData.append(Movie(title:title,url:url,id:id, year:year,type:type))
-//            if (type == "movie"){
-//                movieData.append(Movie(title:title,url:url,id:id, year:year,type:type))
-//            }
-//        }
-        
-    }
 
     private func getJSON(url: String) -> JSON {
         
