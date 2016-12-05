@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		477E1F391DF5EA13009F8779 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477E1F381DF5EA13009F8779 /* Destination.swift */; };
 		4783B8531DF24B68001F644E /* DriverShuttleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4783B84D1DF24B68001F644E /* DriverShuttleViewController.swift */; };
 		4783B8541DF24B68001F644E /* DestinationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4783B84E1DF24B68001F644E /* DestinationsViewController.swift */; };
 		4783B8551DF24B68001F644E /* DestinationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4783B84F1DF24B68001F644E /* DestinationsViewController.xib */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		477E1F381DF5EA13009F8779 /* Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		4783B84D1DF24B68001F644E /* DriverShuttleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverShuttleViewController.swift; sourceTree = "<group>"; };
 		4783B84E1DF24B68001F644E /* DestinationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationsViewController.swift; sourceTree = "<group>"; };
 		4783B84F1DF24B68001F644E /* DestinationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DestinationsViewController.xib; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				4783B8501DF24B68001F644E /* SubmitViewController.swift */,
 				4783B8631DF25F03001F644E /* Main.storyboard */,
 				4783B8651DF264C6001F644E /* AfterSubmitViewController.swift */,
+				477E1F381DF5EA13009F8779 /* Destination.swift */,
 				4783B8691DF2804E001F644E /* LaunchScreen.storyboard */,
 				4783B8661DF264C6001F644E /* AfterSubmitViewController.xib */,
 				4783B8511DF24B68001F644E /* SubmitViewController.xib */,
@@ -250,6 +253,7 @@
 			files = (
 				4783B8531DF24B68001F644E /* DriverShuttleViewController.swift in Sources */,
 				B6CB15121DEFF5A20055333B /* SwiftyJSON.swift in Sources */,
+				477E1F391DF5EA13009F8779 /* Destination.swift in Sources */,
 				4783B8541DF24B68001F644E /* DestinationsViewController.swift in Sources */,
 				4783B8671DF264C6001F644E /* AfterSubmitViewController.swift in Sources */,
 				4783B8581DF24B68001F644E /* ShuttleViewController.swift in Sources */,

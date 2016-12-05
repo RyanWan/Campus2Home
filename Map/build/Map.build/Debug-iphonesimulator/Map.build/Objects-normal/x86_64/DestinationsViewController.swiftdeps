@@ -1,53 +1,61 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "Destination"
 - "DestinationsViewController"
 provides-nominal:
+- "V3Map11Destination"
 - "C3Map26DestinationsViewController"
 provides-member:
+- ["V3Map11Destination", ""]
 - ["C3Map26DestinationsViewController", ""]
 provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
 - "bus"
+- "startPlanRoute"
+- "destinations"
+- "viewDidLoad"
+- "refresh_table"
 - "setupTableView"
 - "refreshControl"
-- "viewDidLoad"
 - "refresh"
-- "startPlanRoute"
 - "planRouteButton"
-- "refresh_table"
-- "destinations"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
 depends-top-level:
-- !private "UIImage"
-- !private "/"
 - "NSIndexPath"
-- !private "*"
+- !private "MapViewController"
 - !private "NSURLRequest"
-- "UIButton"
-- !private "JSON"
-- "UITableViewCell"
+- "UIViewController"
+- !private "UIColor"
+- "UITableViewDataSource"
+- "IntegerLiteralType"
+- "UITableViewDelegate"
+- "UIRefreshControl"
+- "StringLiteralType"
+- "Destination"
 - "AnyObject"
-- !private "BooleanLiteralType"
+- !private "NSURL"
+- !private "UIImage"
+- "UITableViewCell"
+- !private "JSON"
+- !private "/"
+- !private "UIControlEvents"
+- !private "NSURLConnection"
+- !private "..."
+- !private "UnicodeScalarType"
 - "UITableView"
 - !private "CGRectMake"
-- !private "NSURL"
-- !private "NSData"
-- !private "UIControlEvents"
-- !private "UIColor"
-- "DestinationsViewController"
-- !private "NSURLConnection"
+- "UIButton"
 - !private "NSAttributedString"
-- !private "MapViewController"
-- !private "StringLiteralType"
-- "UIRefreshControl"
+- "DestinationsViewController"
+- !private "NSData"
+- "FloatLiteralType"
 - "Int"
-- "UITableViewDelegate"
-- "UITableViewDataSource"
 - "String"
-- "UIViewController"
+- !private "BooleanLiteralType"
+- !private "*"
 - !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "CGRectMake"]
@@ -140,14 +148,17 @@ depends-member:
 - !private ["Vs10ArraySlice", "Index"]
 - !private ["Ps22BidirectionalIndexType", "Distance"]
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps22BidirectionalIndexType", "_DisabledRangeIndex"]
 - !private ["Ps21BitwiseOperationsType", "Distance"]
 - !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "_DisabledRangeIndex"]
 - !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "Generator"]
 - !private ["Ps25BooleanLiteralConvertible", "Index"]
 - !private ["Ps25BooleanLiteralConvertible", "SubSequence"]
 - !private ["Ps25BooleanLiteralConvertible", "_Element"]
 - !private ["Ps25BooleanLiteralConvertible", "arrayValue"]
+- !private ["Ps25BooleanLiteralConvertible", "count"]
 - !private ["Ps25BooleanLiteralConvertible", "init"]
 - !private ["Ps25BooleanLiteralConvertible", "stringValue"]
 - !private ["Ps25BooleanLiteralConvertible", "subscript"]
@@ -156,6 +167,7 @@ depends-member:
 - !private ["Ps11BooleanType", "SubSequence"]
 - !private ["Ps11BooleanType", "_Element"]
 - !private ["Ps11BooleanType", "arrayValue"]
+- !private ["Ps11BooleanType", "count"]
 - !private ["Ps11BooleanType", "init"]
 - !private ["Ps11BooleanType", "stringValue"]
 - !private ["Ps11BooleanType", "subscript"]
@@ -179,6 +191,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "UIRefreshControl"]
 - !private ["Ps11CVarArgType", "UITableView"]
 - !private ["Ps11CVarArgType", "UITableViewCell"]
+- !private ["Ps11CVarArgType", "_DisabledRangeIndex"]
 - !private ["Ps11CVarArgType", "addSubview"]
 - !private ["Ps11CVarArgType", "addTarget"]
 - !private ["Ps11CVarArgType", "attributedTitle"]
@@ -231,6 +244,8 @@ depends-member:
 - !private ["Ps11CVarArgType", "whiteColor"]
 - ["Ps11CVarArgType", ""]
 - !private ["Vs9Character", "deinit"]
+- !private ["Vs14ClosedInterval", "Generator"]
+- !private ["Vs14ClosedInterval", "deinit"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
 - !private ["Ps14CollectionType", "SubSequence"]
@@ -250,6 +265,7 @@ depends-member:
 - !private ["Ps10Comparable", "_DisabledRangeIndex"]
 - !private ["Ps10Comparable", "_Element"]
 - !private ["Ps10Comparable", "arrayValue"]
+- !private ["Ps10Comparable", "count"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "stringValue"]
 - !private ["Ps10Comparable", "subscript"]
@@ -262,6 +278,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSURL"]
 - !private ["Ps28CustomDebugStringConvertible", "NSURLConnection"]
 - !private ["Ps28CustomDebugStringConvertible", "NSURLRequest"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIControlEvents"]
@@ -345,6 +362,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIRefreshControl"]
 - !private ["Ps23CustomStringConvertible", "UITableView"]
 - !private ["Ps23CustomStringConvertible", "UITableViewCell"]
+- !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "addTarget"]
@@ -403,8 +421,13 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
 - !private ["Ps23CustomStringConvertible", "whiteColor"]
 - ["Ps23CustomStringConvertible", ""]
+- ["V3Map11Destination", "address"]
+- ["V3Map11Destination", "init"]
+- ["V3Map11Destination", "x"]
+- ["V3Map11Destination", "y"]
 - ["C3Map26DestinationsViewController", "AnyObject"]
 - !private ["C3Map26DestinationsViewController", "CGRectMake"]
+- !private ["C3Map26DestinationsViewController", "Destination"]
 - ["C3Map26DestinationsViewController", "Int"]
 - !private ["C3Map26DestinationsViewController", "JSON"]
 - !private ["C3Map26DestinationsViewController", "MapViewController"]
@@ -454,11 +477,15 @@ depends-member:
 - !private ["C3Map26DestinationsViewController", "view"]
 - ["C3Map26DestinationsViewController", "viewDidLoad"]
 - ["C3Map26DestinationsViewController", "viewForZoomingInScrollView"]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
 - !private ["Ps28DictionaryLiteralConvertible", "Generator"]
 - !private ["Ps28DictionaryLiteralConvertible", "Index"]
 - !private ["Ps28DictionaryLiteralConvertible", "SubSequence"]
 - !private ["Ps28DictionaryLiteralConvertible", "_Element"]
 - !private ["Ps28DictionaryLiteralConvertible", "arrayValue"]
+- !private ["Ps28DictionaryLiteralConvertible", "count"]
 - !private ["Ps28DictionaryLiteralConvertible", "init"]
 - !private ["Ps28DictionaryLiteralConvertible", "stringValue"]
 - !private ["Ps28DictionaryLiteralConvertible", "subscript"]
@@ -492,6 +519,7 @@ depends-member:
 - !private ["Ps9Equatable", "attributedTitle"]
 - !private ["Ps9Equatable", "backgroundColor"]
 - ["Ps9Equatable", "bus"]
+- !private ["Ps9Equatable", "count"]
 - !private ["Ps9Equatable", "dataSource"]
 - !private ["Ps9Equatable", "delegate"]
 - ["Ps9Equatable", "destinations"]
@@ -549,6 +577,7 @@ depends-member:
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "SubSequence"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "_Element"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "arrayValue"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "count"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "stringValue"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "subscript"]
@@ -558,6 +587,7 @@ depends-member:
 - !private ["Ps23FloatLiteralConvertible", "SubSequence"]
 - !private ["Ps23FloatLiteralConvertible", "_Element"]
 - !private ["Ps23FloatLiteralConvertible", "arrayValue"]
+- !private ["Ps23FloatLiteralConvertible", "count"]
 - !private ["Ps23FloatLiteralConvertible", "init"]
 - !private ["Ps23FloatLiteralConvertible", "stringValue"]
 - !private ["Ps23FloatLiteralConvertible", "subscript"]
@@ -581,6 +611,7 @@ depends-member:
 - !private ["Ps8Hashable", "UIRefreshControl"]
 - !private ["Ps8Hashable", "UITableView"]
 - !private ["Ps8Hashable", "UITableViewCell"]
+- !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "addTarget"]
 - !private ["Ps8Hashable", "attributedTitle"]
@@ -646,6 +677,7 @@ depends-member:
 - !private ["Vs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "_DisabledRangeIndex"]
 - !private ["Si", "deinit"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "deinit"]
@@ -653,23 +685,29 @@ depends-member:
 - !private ["Vs4Int8", "deinit"]
 - !private ["Ps21IntegerArithmeticType", "Distance"]
 - !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "_DisabledRangeIndex"]
 - !private ["Ps25IntegerLiteralConvertible", "Distance"]
 - !private ["Ps25IntegerLiteralConvertible", "Generator"]
 - !private ["Ps25IntegerLiteralConvertible", "Index"]
 - !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps25IntegerLiteralConvertible", "SubSequence"]
+- !private ["Ps25IntegerLiteralConvertible", "_DisabledRangeIndex"]
 - !private ["Ps25IntegerLiteralConvertible", "_Element"]
 - !private ["Ps25IntegerLiteralConvertible", "arrayValue"]
+- !private ["Ps25IntegerLiteralConvertible", "count"]
 - !private ["Ps25IntegerLiteralConvertible", "init"]
 - !private ["Ps25IntegerLiteralConvertible", "stringValue"]
 - !private ["Ps25IntegerLiteralConvertible", "subscript"]
 - !private ["Ps11IntegerType", "Distance"]
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "_DisabledRangeIndex"]
+- !private ["Ps12IntervalType", "Generator"]
 - !private ["V3Map4JSON", "Generator"]
 - !private ["V3Map4JSON", "Index"]
 - !private ["V3Map4JSON", "SubSequence"]
 - !private ["V3Map4JSON", "_Element"]
 - !private ["V3Map4JSON", "arrayValue"]
+- !private ["V3Map4JSON", "count"]
 - !private ["V3Map4JSON", "deinit"]
 - !private ["V3Map4JSON", "init"]
 - !private ["V3Map4JSON", "stringValue"]
@@ -680,10 +718,12 @@ depends-member:
 - !private ["V3Map9JSONIndex", "deinit"]
 - !private ["P3Map17JSONSubscriptType", "Distance"]
 - !private ["P3Map17JSONSubscriptType", "IntegerLiteralType"]
+- !private ["P3Map17JSONSubscriptType", "_DisabledRangeIndex"]
 - !private ["P3Map17JSONSubscriptType", "init"]
 - !private ["C3Map17MapViewController", "init"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "_DisabledRangeIndex"]
 - !private ["Ps14MirrorPathType", "init"]
 - !private ["Ps21MutableCollectionType", "Generator"]
 - !private ["Ps21MutableCollectionType", "Index"]
@@ -826,6 +866,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "CGRectMake"]
+- !private ["CSo8NSObject", "Destination"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "JSON"]
 - !private ["CSo8NSObject", "MapViewController"]
@@ -967,19 +1008,25 @@ depends-member:
 - !private ["CSo12NSURLRequest", "init"]
 - !private ["Ps21NilLiteralConvertible", "Generator"]
 - !private ["Ps21NilLiteralConvertible", "Index"]
+- ["Ps21NilLiteralConvertible", "Some"]
 - !private ["Ps21NilLiteralConvertible", "SubSequence"]
 - !private ["Ps21NilLiteralConvertible", "_Element"]
 - !private ["Ps21NilLiteralConvertible", "arrayValue"]
+- !private ["Ps21NilLiteralConvertible", "count"]
 - !private ["Ps21NilLiteralConvertible", "init"]
 - !private ["Ps21NilLiteralConvertible", "stringValue"]
 - !private ["Ps21NilLiteralConvertible", "subscript"]
 - !private ["Ps13OptionSetType", "Normal"]
 - !private ["Ps13OptionSetType", "ValueChanged"]
+- ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps21RandomAccessIndexType", "_DisabledRangeIndex"]
+- !private ["Vs5Range", "Generator"]
 - !private ["Vs5Range", "deinit"]
+- !private ["Vs14RangeGenerator", "Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "Generator"]
 - !private ["Ps30RangeReplaceableCollectionType", "Index"]
 - !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
@@ -996,6 +1043,7 @@ depends-member:
 - !private ["Ps16RawRepresentable", "ValueChanged"]
 - !private ["Ps16RawRepresentable", "_Element"]
 - !private ["Ps16RawRepresentable", "arrayValue"]
+- !private ["Ps16RawRepresentable", "count"]
 - !private ["Ps16RawRepresentable", "init"]
 - !private ["Ps16RawRepresentable", "stringValue"]
 - !private ["Ps16RawRepresentable", "subscript"]
@@ -1016,8 +1064,10 @@ depends-member:
 - !private ["Ps14SetAlgebraType", "ValueChanged"]
 - !private ["Ps17SignedIntegerType", "Distance"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps17SignedIntegerType", "_DisabledRangeIndex"]
 - !private ["Ps16SignedNumberType", "Distance"]
 - !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "_DisabledRangeIndex"]
 - !private ["Vs5Slice", "Generator"]
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "SubSequence"]
@@ -1026,6 +1076,7 @@ depends-member:
 - !private ["Ps10Streamable", "init"]
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "_DisabledRangeIndex"]
 - !private ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps30StringInterpolationConvertible", "init"]
@@ -1034,6 +1085,7 @@ depends-member:
 - !private ["Ps24StringLiteralConvertible", "SubSequence"]
 - !private ["Ps24StringLiteralConvertible", "_Element"]
 - !private ["Ps24StringLiteralConvertible", "arrayValue"]
+- !private ["Ps24StringLiteralConvertible", "count"]
 - !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "stringValue"]
 - !private ["Ps24StringLiteralConvertible", "subscript"]
@@ -1294,6 +1346,7 @@ depends-member:
 - !private ["CSo16UIRefreshControl", "init"]
 - ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "CGRectMake"]
+- !private ["CSo11UIResponder", "Destination"]
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "JSON"]
 - !private ["CSo11UIResponder", "MapViewController"]
@@ -1624,6 +1677,7 @@ depends-member:
 - !private ["CSo6UIView", "textLabel"]
 - ["CSo16UIViewController", "AnyObject"]
 - !private ["CSo16UIViewController", "CGRectMake"]
+- !private ["CSo16UIViewController", "Destination"]
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "JSON"]
 - !private ["CSo16UIViewController", "MapViewController"]
@@ -1685,6 +1739,7 @@ depends-member:
 - !private ["Ps31UnicodeScalarLiteralConvertible", "SubSequence"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "_Element"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "arrayValue"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "count"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "stringValue"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "subscript"]
@@ -1699,6 +1754,7 @@ depends-member:
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "_DisabledRangeIndex"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
@@ -1719,13 +1775,16 @@ depends-member:
 - !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
 - !private ["Ps22_IntegerArithmeticType", "Distance"]
 - !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "_DisabledRangeIndex"]
 - !private ["Ps12_IntegerType", "Distance"]
 - !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "_DisabledRangeIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "Distance"]
 - !private ["Ps21_ObjectiveCBridgeable", "Generator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
@@ -1734,11 +1793,14 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps22_RandomAccessAmbiguity", "Distance"]
 - !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps22_RandomAccessAmbiguity", "_DisabledRangeIndex"]
 - !private ["Ps12_Reflectable", "Distance"]
 - !private ["Ps12_Reflectable", "Generator"]
 - !private ["Ps12_Reflectable", "Index"]
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_DisabledRangeIndex"]
 - !private ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "addSubview"]
 - !private ["Ps12_Reflectable", "addTarget"]
@@ -1766,6 +1828,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "width"]
 - !private ["Ps18_SignedIntegerType", "Distance"]
 - !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps18_SignedIntegerType", "_DisabledRangeIndex"]
 depends-nominal:
 - "Ps9AnyObject"
 - !private "Sa"
@@ -1781,11 +1844,14 @@ depends-nominal:
 - !private "VSC6CGSize"
 - "Ps11CVarArgType"
 - !private "Vs9Character"
+- !private "Vs14ClosedInterval"
 - !private "Ps14CollectionType"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
+- "V3Map11Destination"
 - "C3Map26DestinationsViewController"
+- !private "Vs10Dictionary"
 - !private "Ps28DictionaryLiteralConvertible"
 - !private "Sd"
 - "Ps9Equatable"
@@ -1805,6 +1871,7 @@ depends-nominal:
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
+- !private "Ps12IntervalType"
 - !private "V3Map4JSON"
 - !private "V3Map13JSONGenerator"
 - !private "V3Map9JSONIndex"
@@ -1827,12 +1894,13 @@ depends-nominal:
 - !private "CSo5NSURL"
 - !private "CSo15NSURLConnection"
 - !private "CSo12NSURLRequest"
-- !private "Ps21NilLiteralConvertible"
+- "Ps21NilLiteralConvertible"
 - !private "Ps13OptionSetType"
-- !private "Sq"
+- "Sq"
 - !private "Ps16OutputStreamType"
 - !private "Ps21RandomAccessIndexType"
 - !private "Vs5Range"
+- !private "Vs14RangeGenerator"
 - !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
 - !private "V10ObjectiveC8Selector"
@@ -1898,7 +1966,7 @@ depends-nominal:
 - !private "Ps12_IntegerType"
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Ps22_RandomAccessAmbiguity"
-- !private "Ps12_Reflectable"
+- "Ps12_Reflectable"
 - !private "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 depends-external:
@@ -1973,4 +2041,4 @@ depends-external:
 - "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSAddressComponent.h"
 - "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GooglePlaces.h"
 - "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Modules/module.modulemap"
-interface-hash: "dab1a6fb31a760a7fdd55655470a9dbe"
+interface-hash: "605c542b64cf335fb8f28b3454049698"
