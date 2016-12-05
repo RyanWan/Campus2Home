@@ -8,71 +8,65 @@
 
 import UIKit
 
-class ShuttleViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ShuttleViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     var buses = ["6:00PM", "6:30PM", "7:00PM"];
-    var tableView: UITableView!
-
+    var destinations = ["Olive", "Pershing"]
+    var pickerView : UIPickerView!
+    var chooseTime : UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print(buses[0])
-        setupTableView()
+        setuppickerView()
 
         // Do any additional setup after loading the view.
     }
     
-    func setupTableView() {
-        
-        tableView = UITableView(frame: view.frame.offsetBy(dx:0, dy: 0))
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        view.addSubview(tableView)
+    func setuppickerView(){
+        chooseTime = UILabel(frame: view.frame.offsetBy(dx:0, dy: 0))
+        chooseTime.text = "Choose the bus you want to take"
+        chooseTime.textAlignment = NSTextAlignment.Center
+        chooseTime.font = UIFont(name:"Helvetica", size:20)
+        pickerView = UIPickerView(frame: view.frame.offsetBy(dx:0, dy: 100))
+        pickerView.delegate = self
+        pickerView.dataSource = self
+        view.addSubview(chooseTime)
+        view.addSubview(pickerView)
         
     }
-
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return buses.count;
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        return buses[row]
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let detailedVC = SubmitViewController(nibName: "SubmitViewController", bundle: nil)
+    //
+    //        // detailedVC
+        detailedVC.bus = buses[row]
+        
+    
+    //        detailedVC.image = theImageCache[indexPath.row]
+    //
+        navigationController?.pushViewController(detailedVC, animated: true)
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return buses.count
-    }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        
-        let cell = UITableViewCell(style: .Subtitle, reuseIdentifier: "cell")
-        cell.textLabel!.text = buses[indexPath.row]
-        
-        return cell
-    }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        print("Time to show \(indexPath.row)")
-        let detailedVC = SubmitViewController(nibName: "SubmitViewController", bundle: nil)
-//
-//        // detailedVC
-        detailedVC.bus = buses[indexPath.row]
-//        detailedVC.image = theImageCache[indexPath.row]
-//        
-        navigationController?.pushViewController(detailedVC, animated: true)
-    }
-
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
