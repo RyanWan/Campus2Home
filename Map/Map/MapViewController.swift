@@ -25,7 +25,6 @@ class MapViewController: UIViewController {
     var nextButton : UIButton = UIButton(frame: CGRect.zero);
     
     override func loadView() {
-
         // Create a GMSCameraPosition
         let camera = GMSCameraPosition.cameraWithLatitude(38.648342, longitude: -90.311463, zoom: 16.0)
         let mapView = GMSMapView.mapWithFrame(CGRect.zero, camera: camera)
@@ -69,12 +68,16 @@ class MapViewController: UIViewController {
     }
     
     func nextButtonClicked(sender:UIButton!) {
-        destinations.removeAtIndex(1)
-        markers.removeAtIndex(1)
-        for index in 1...markers.count-1{
-            markers[index].title = "\(Int(markers[index].title!)!-1)"
+        if (markers.count > 1){
+            destinations.removeAtIndex(1)
+            markers[1].map = nil
+            markers.removeAtIndex(1)
+            if (markers.count > 2){
+                    for index in 1...markers.count-1{
+                        markers[index].title = "\(Int(markers[index].title!)!-1)"
+                    }
+            }
         }
-        
         print("Button Clicked")
     }
     

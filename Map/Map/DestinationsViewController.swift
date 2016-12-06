@@ -114,21 +114,15 @@ class DestinationsViewController: UIViewController, UITableViewDataSource, UITab
             print ("Finished")
             let json = JSON(data: data)
             print("json is \(json)")
-            var route = json["route"]
-            for i in 0...route.count {
-                var d:Destination! = Destination()
+            var route = json["route"].arrayValue
+            for i in 0...route.count-1 {
+               var d:Destination! = Destination()
                 
-                if let item = route[i] as? [String: AnyObject] {
-                    if let address = item["address"] as? String {
-                        d.address = address
-                    }
-                    if let x = item["x"] as? Double {
-                        d.x = x
-                    }
-                    if let y = item["y"] as? Double {
-                        d.y = y
-                    }
-                }
+                d.address = route[i]["address"].stringValue
+                d.x = Double(route[i]["x"].stringValue)!
+                
+                d.y = Double(route[i]["y"].stringValue)!
+                
                 destinations.append(d)
 
             }
