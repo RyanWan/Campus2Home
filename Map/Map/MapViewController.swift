@@ -53,11 +53,12 @@ class MapViewController: UIViewController {
             let dest = destinations[index]
             let marker = GMSMarker()
             marker.position = CLLocationCoordinate2D(latitude: dest.x, longitude:dest.y)
-            marker.title = "\(index)"
+            
             marker.map = Map
             markers.append(marker)
         
         }
+        markers[0].title = "Start"
         if (flag){
             Map.selectedMarker = markers[1]
         }
