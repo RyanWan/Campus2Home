@@ -17,8 +17,9 @@ class MapViewController: UIViewController {
     var destinations:[Destination] = []
     var markers:[GMSMarker] = []
     var flag:Bool = false
-    
-    
+    var Path:GMSMutablePath!
+    var Line: GMSPolyline!
+    var Map: GMSMapView!
     //api key for geocoding:AIzaSyA-zNnojD_2V81XAKp-AShKGNb32bRwtfI
 
     // You don't need to modify the default init(nibName:bundle:) method.
@@ -27,29 +28,30 @@ class MapViewController: UIViewController {
     override func loadView() {
         // Create a GMSCameraPosition
         let camera = GMSCameraPosition.cameraWithLatitude(38.648342, longitude: -90.311463, zoom: 16.0)
-        let mapView = GMSMapView.mapWithFrame(CGRect.zero, camera: camera)
-        mapView.myLocationEnabled = true
+        Map = GMSMapView.mapWithFrame(CGRect.zero, camera: camera)
+        
+        Map.myLocationEnabled = true
         //creat the plan route button
         let button = UIButton(frame: CGRectMake(160, 600, 80, 40))
         button.backgroundColor = UIColor.lightGrayColor()
         button.setTitle("Next", forState: .Normal)
         nextButton = button
         button.addTarget(self, action: "nextButtonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
-        mapView.addSubview(button)
-        view = mapView
+        Map.addSubview(button)
+        view = Map
         
         
         // Creates markers
-        for index in 0...destinations.count-2 {
+        for index in 0...destinations.count-1 {
             let dest = destinations[index]
             let marker = GMSMarker()
             marker.position = CLLocationCoordinate2D(latitude: dest.x, longitude:dest.y)
             marker.title = "\(index)"
-            marker.map = mapView
+            marker.map = Map
             markers.append(marker)
         
         }
-        mapView.selectedMarker = markers[1]
+        Map.selectedMarker = markers[1]
         
         //draw route
         if (flag){
@@ -58,27 +60,51 @@ class MapViewController: UIViewController {
                 let dest = destinations[index]
                 path.addCoordinate(CLLocationCoordinate2D(latitude: dest.x, longitude: dest.y))
             }
-            let polyline = GMSPolyline(path: path)
-            polyline.map = mapView
+            Path = path
+            Line = GMSPolyline(path: path)
+            Line.map = Map
         }
 
         
         
 
     }
+    func removeLine(){
+        Path.removeCoordinateAtIndex(0)
+        Line.map = nil
+        Line = GMSPolyline(path: Path)
+        Line.map = Map
+    }
+    
+    func fitMarkers(){
+        var bounds = GMSCoordinateBounds()
+        for marker in markers{
+            bounds = bounds.includingCoordinate(marker.position)
+        }
+        Map.animateWithCameraUpdate(GMSCameraUpdate.fitBounds(bounds))
+    }
     
     func nextButtonClicked(sender:UIButton!) {
-        if (markers.count > 1){
-            destinations.removeAtIndex(1)
-            markers[1].map = nil
-            markers.removeAtIndex(1)
-            if (markers.count > 2){
-                    for index in 1...markers.count-1{
-                        markers[index].title = "\(Int(markers[index].title!)!-1)"
-                    }
+        if (markers.count > 0){
+            destinations.removeAtIndex(0)
+            markers[0].map = nil
+            markers.removeAtIndex(0)
+            fitMarkers()
+            if (markers.count > 0){
+                Map.camera = GMSCameraPosition.cameraWithLatitude(destinations[0].x, longitude: destinations[0].y, zoom: 16.0)
+                markers[0].title = "Next"
+                Map.selectedMarker = markers[0]
+                removeLine()
             }
         }
         print("Button Clicked")
+                if (markers.count == 0){
+            let alert = UIAlertView()
+            alert.title = "Note"
+            alert.message = "Trip Finished"
+            alert.addButtonWithTitle("Cancel")
+            alert.show()
+        }
     }
     
 
