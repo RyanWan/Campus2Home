@@ -39,7 +39,14 @@ class MapViewController: UIViewController {
         button.addTarget(self, action: "nextButtonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
         Map.addSubview(button)
         view = Map
-        
+        if (!flag){
+             nextButton.hidden = true
+        }
+    
+        if (destinations.count <= 2){
+            print(flag)
+            return
+        }
         
         // Creates markers
         for index in 0...destinations.count-1 {
@@ -51,19 +58,21 @@ class MapViewController: UIViewController {
             markers.append(marker)
         
         }
-        Map.selectedMarker = markers[1]
+        if (flag){
+            Map.selectedMarker = markers[1]
+        }
         
         //draw route
-        if (flag){
-            let path = GMSMutablePath()
-            for index in 0...destinations.count-1 {
-                let dest = destinations[index]
-                path.addCoordinate(CLLocationCoordinate2D(latitude: dest.x, longitude: dest.y))
-            }
-            Path = path
-            Line = GMSPolyline(path: path)
-            Line.map = Map
+        
+        let path = GMSMutablePath()
+        for index in 0...destinations.count-1 {
+            let dest = destinations[index]
+            path.addCoordinate(CLLocationCoordinate2D(latitude: dest.x, longitude: dest.y))
         }
+        Path = path
+        Line = GMSPolyline(path: path)
+        Line.map = Map
+       
 
         
         

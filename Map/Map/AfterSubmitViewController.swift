@@ -23,11 +23,16 @@ class AfterSubmitViewController: UIViewController, UITableViewDataSource, UITabl
         refreshControl = UIRefreshControl()
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
-        setupTableView()
-        tableView.addSubview(refreshControl)
+        
         
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidLayoutSubviews() {
+        setupTableView()
+        tableView.addSubview(refreshControl)
+    }
+    
     func refresh_table(){
         var url:NSURL?
         url = NSURL(string: "http://localhost:5000/receive/\(bus)/update")
@@ -62,7 +67,7 @@ class AfterSubmitViewController: UIViewController, UITableViewDataSource, UITabl
     func setupTableView() {
         
         tableView = UITableView(frame: view.frame.offsetBy(dx:0, dy: 100))
-        tableView.frame = CGRectMake(0, 70, self.view.frame.size.width, self.view.frame.height * 0.7);
+        tableView.frame = CGRectMake(0, 70, self.view.frame.width, self.view.frame.height * 0.7);
         tableView.dataSource = self
         tableView.delegate = self
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
