@@ -6,53 +6,60 @@ provides-nominal:
 provides-member:
 - ["C3Map25AfterSubmitViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "startPlanRoute"
-- "refreshControl"
-- "refresh_table"
-- "refresh"
-- "destinations"
-- "setupTableView"
-- "viewDidLoad"
 - "bus"
+- "viewDidLoad"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "refresh_table"
+- "didReceiveMemoryWarning"
+- "refreshControl"
+- "destinations"
+- "startPlanRoute"
+- "setupTableView"
+- "refresh"
+- "viewDidLayoutSubviews"
 - "planRouteButton"
 depends-top-level:
-- !private "JSON"
-- !private "NSAttributedString"
-- "UITableView"
-- !private "NSURL"
-- "Int"
-- !private "MapViewController"
-- "String"
-- !private "/"
-- "AfterSubmitViewController"
-- !private "UIImage"
-- !private "UIColor"
+- "UITableViewDelegate"
+- "UITableViewCell"
+- "UITableViewDataSource"
 - "UIRefreshControl"
-- !private "NSData"
-- !private "BooleanLiteralType"
-- "AnyObject"
+- !private "*"
+- "String"
+- !private "NSURLConnection"
 - !private "print"
 - !private "UIControlEvents"
-- "UIButton"
+- !private "JSON"
+- !private "BooleanLiteralType"
+- "AfterSubmitViewController"
 - !private "NSURLRequest"
-- "UIViewController"
-- "UITableViewDataSource"
-- "UITableViewDelegate"
+- !private "Destination"
 - !private "Array"
-- !private "StringLiteralType"
-- "UITableViewCell"
-- "NSIndexPath"
-- !private "NSURLConnection"
+- "UIButton"
+- !private "/"
 - !private "CGRectMake"
-- !private "*"
+- !private "NSData"
+- !private "UnicodeScalarType"
+- "UITableView"
+- !private "Double"
+- !private "MapViewController"
+- "Int"
+- "UIViewController"
+- !private "NSAttributedString"
+- !private "NSURL"
+- !private "StringLiteralType"
+- !private "..."
+- !private "UIImage"
+- "NSIndexPath"
+- !private "UIColor"
+- "AnyObject"
 depends-member:
 - ["C3Map25AfterSubmitViewController", "AnyObject"]
 - !private ["C3Map25AfterSubmitViewController", "CGRectMake"]
+- !private ["C3Map25AfterSubmitViewController", "Destination"]
+- !private ["C3Map25AfterSubmitViewController", "Double"]
 - ["C3Map25AfterSubmitViewController", "Int"]
 - !private ["C3Map25AfterSubmitViewController", "JSON"]
 - !private ["C3Map25AfterSubmitViewController", "MapViewController"]
@@ -100,9 +107,11 @@ depends-member:
 - ["C3Map25AfterSubmitViewController", "startPlanRoute"]
 - ["C3Map25AfterSubmitViewController", "tableView"]
 - !private ["C3Map25AfterSubmitViewController", "view"]
+- ["C3Map25AfterSubmitViewController", "viewDidLayoutSubviews"]
 - ["C3Map25AfterSubmitViewController", "viewDidLoad"]
 - ["C3Map25AfterSubmitViewController", "viewForZoomingInScrollView"]
 - !private ["Ps9AnyObject", "CGRectMake"]
+- !private ["Ps9AnyObject", "Destination"]
 - !private ["Ps9AnyObject", "JSON"]
 - !private ["Ps9AnyObject", "MapViewController"]
 - !private ["Ps9AnyObject", "NSAttributedString"]
@@ -125,6 +134,7 @@ depends-member:
 - ["Ps9AnyObject", "destinations"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "endRefreshing"]
+- !private ["Ps9AnyObject", "flag"]
 - !private ["Ps9AnyObject", "frame"]
 - !private ["Ps9AnyObject", "image"]
 - !private ["Ps9AnyObject", "imageView"]
@@ -162,6 +172,7 @@ depends-member:
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "textLabel"]
 - !private ["Ps9AnyObject", "view"]
+- ["Ps9AnyObject", "viewDidLayoutSubviews"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
 - !private ["Ps9AnyObject", "whiteColor"]
@@ -194,14 +205,17 @@ depends-member:
 - !private ["Vs10ArraySlice", "Index"]
 - !private ["Ps22BidirectionalIndexType", "Distance"]
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps22BidirectionalIndexType", "_DisabledRangeIndex"]
 - !private ["Ps21BitwiseOperationsType", "Distance"]
 - !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "_DisabledRangeIndex"]
 - !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "Generator"]
 - !private ["Ps25BooleanLiteralConvertible", "Index"]
 - !private ["Ps25BooleanLiteralConvertible", "SubSequence"]
 - !private ["Ps25BooleanLiteralConvertible", "_Element"]
 - !private ["Ps25BooleanLiteralConvertible", "arrayValue"]
+- !private ["Ps25BooleanLiteralConvertible", "count"]
 - !private ["Ps25BooleanLiteralConvertible", "init"]
 - !private ["Ps25BooleanLiteralConvertible", "stringValue"]
 - !private ["Ps25BooleanLiteralConvertible", "subscript"]
@@ -210,15 +224,16 @@ depends-member:
 - !private ["Ps11BooleanType", "SubSequence"]
 - !private ["Ps11BooleanType", "_Element"]
 - !private ["Ps11BooleanType", "arrayValue"]
+- !private ["Ps11BooleanType", "count"]
 - !private ["Ps11BooleanType", "init"]
 - !private ["Ps11BooleanType", "stringValue"]
 - !private ["Ps11BooleanType", "subscript"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["VSC6CGRect", "height"]
 - !private ["VSC6CGRect", "offsetBy"]
-- !private ["VSC6CGRect", "size"]
-- !private ["VSC6CGSize", "width"]
+- !private ["VSC6CGRect", "width"]
 - !private ["Ps11CVarArgType", "CGRectMake"]
+- !private ["Ps11CVarArgType", "Destination"]
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "JSON"]
@@ -233,6 +248,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "UIRefreshControl"]
 - !private ["Ps11CVarArgType", "UITableView"]
 - !private ["Ps11CVarArgType", "UITableViewCell"]
+- !private ["Ps11CVarArgType", "_DisabledRangeIndex"]
 - !private ["Ps11CVarArgType", "addSubview"]
 - !private ["Ps11CVarArgType", "addTarget"]
 - !private ["Ps11CVarArgType", "attributedTitle"]
@@ -243,6 +259,7 @@ depends-member:
 - ["Ps11CVarArgType", "destinations"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
 - !private ["Ps11CVarArgType", "endRefreshing"]
+- !private ["Ps11CVarArgType", "flag"]
 - !private ["Ps11CVarArgType", "frame"]
 - !private ["Ps11CVarArgType", "image"]
 - !private ["Ps11CVarArgType", "imageView"]
@@ -280,11 +297,14 @@ depends-member:
 - !private ["Ps11CVarArgType", "text"]
 - !private ["Ps11CVarArgType", "textLabel"]
 - !private ["Ps11CVarArgType", "view"]
+- ["Ps11CVarArgType", "viewDidLayoutSubviews"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", "viewForZoomingInScrollView"]
 - !private ["Ps11CVarArgType", "whiteColor"]
 - ["Ps11CVarArgType", ""]
 - !private ["Vs9Character", "deinit"]
+- !private ["Vs14ClosedInterval", "Generator"]
+- !private ["Vs14ClosedInterval", "deinit"]
 - !private ["Ps14CollectionType", "Element"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
@@ -305,10 +325,12 @@ depends-member:
 - !private ["Ps10Comparable", "_DisabledRangeIndex"]
 - !private ["Ps10Comparable", "_Element"]
 - !private ["Ps10Comparable", "arrayValue"]
+- !private ["Ps10Comparable", "count"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "stringValue"]
 - !private ["Ps10Comparable", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "CGRectMake"]
+- !private ["Ps28CustomDebugStringConvertible", "Destination"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
@@ -318,6 +340,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSURL"]
 - !private ["Ps28CustomDebugStringConvertible", "NSURLConnection"]
 - !private ["Ps28CustomDebugStringConvertible", "NSURLRequest"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIControlEvents"]
@@ -339,6 +362,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "destinations"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "endRefreshing"]
+- !private ["Ps28CustomDebugStringConvertible", "flag"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - !private ["Ps28CustomDebugStringConvertible", "imageView"]
@@ -379,11 +403,13 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "textLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLayoutSubviews"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
 - !private ["Ps28CustomDebugStringConvertible", "whiteColor"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "CGRectMake"]
+- !private ["Ps23CustomStringConvertible", "Destination"]
 - !private ["Ps23CustomStringConvertible", "Distance"]
 - !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "Generator"]
@@ -402,6 +428,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIRefreshControl"]
 - !private ["Ps23CustomStringConvertible", "UITableView"]
 - !private ["Ps23CustomStringConvertible", "UITableViewCell"]
+- !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "addTarget"]
@@ -416,6 +443,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "destinations"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "endRefreshing"]
+- !private ["Ps23CustomStringConvertible", "flag"]
 - !private ["Ps23CustomStringConvertible", "frame"]
 - !private ["Ps23CustomStringConvertible", "image"]
 - !private ["Ps23CustomStringConvertible", "imageView"]
@@ -456,20 +484,30 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "textLabel"]
 - !private ["Ps23CustomStringConvertible", "view"]
+- ["Ps23CustomStringConvertible", "viewDidLayoutSubviews"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
 - !private ["Ps23CustomStringConvertible", "whiteColor"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["V3Map11Destination", "address"]
+- !private ["V3Map11Destination", "init"]
+- !private ["V3Map11Destination", "x"]
+- !private ["V3Map11Destination", "y"]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
 - !private ["Ps28DictionaryLiteralConvertible", "Generator"]
 - !private ["Ps28DictionaryLiteralConvertible", "Index"]
 - !private ["Ps28DictionaryLiteralConvertible", "SubSequence"]
 - !private ["Ps28DictionaryLiteralConvertible", "_Element"]
 - !private ["Ps28DictionaryLiteralConvertible", "arrayValue"]
+- !private ["Ps28DictionaryLiteralConvertible", "count"]
 - !private ["Ps28DictionaryLiteralConvertible", "init"]
 - !private ["Ps28DictionaryLiteralConvertible", "stringValue"]
 - !private ["Ps28DictionaryLiteralConvertible", "subscript"]
 - !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "CGRectMake"]
+- !private ["Ps9Equatable", "Destination"]
 - !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "Generator"]
 - !private ["Ps9Equatable", "Index"]
@@ -498,11 +536,13 @@ depends-member:
 - !private ["Ps9Equatable", "attributedTitle"]
 - !private ["Ps9Equatable", "backgroundColor"]
 - ["Ps9Equatable", "bus"]
+- !private ["Ps9Equatable", "count"]
 - !private ["Ps9Equatable", "dataSource"]
 - !private ["Ps9Equatable", "delegate"]
 - ["Ps9Equatable", "destinations"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "endRefreshing"]
+- !private ["Ps9Equatable", "flag"]
 - !private ["Ps9Equatable", "frame"]
 - !private ["Ps9Equatable", "height"]
 - !private ["Ps9Equatable", "image"]
@@ -537,7 +577,6 @@ depends-member:
 - !private ["Ps9Equatable", "sendSynchronousRequest"]
 - !private ["Ps9Equatable", "setTitleColor"]
 - ["Ps9Equatable", "setupTableView"]
-- !private ["Ps9Equatable", "size"]
 - ["Ps9Equatable", "startPlanRoute"]
 - !private ["Ps9Equatable", "stringValue"]
 - !private ["Ps9Equatable", "subscript"]
@@ -545,6 +584,7 @@ depends-member:
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "textLabel"]
 - !private ["Ps9Equatable", "view"]
+- ["Ps9Equatable", "viewDidLayoutSubviews"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
 - !private ["Ps9Equatable", "whiteColor"]
@@ -555,6 +595,7 @@ depends-member:
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "SubSequence"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "_Element"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "arrayValue"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "count"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "stringValue"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "subscript"]
@@ -564,6 +605,7 @@ depends-member:
 - !private ["Ps23FloatLiteralConvertible", "SubSequence"]
 - !private ["Ps23FloatLiteralConvertible", "_Element"]
 - !private ["Ps23FloatLiteralConvertible", "arrayValue"]
+- !private ["Ps23FloatLiteralConvertible", "count"]
 - !private ["Ps23FloatLiteralConvertible", "init"]
 - !private ["Ps23FloatLiteralConvertible", "stringValue"]
 - !private ["Ps23FloatLiteralConvertible", "subscript"]
@@ -572,6 +614,7 @@ depends-member:
 - !private ["Ps16ForwardIndexType", "_DisabledRangeIndex"]
 - !private ["Ps13GeneratorType", "Element"]
 - !private ["Ps8Hashable", "CGRectMake"]
+- !private ["Ps8Hashable", "Destination"]
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "JSON"]
@@ -587,6 +630,7 @@ depends-member:
 - !private ["Ps8Hashable", "UIRefreshControl"]
 - !private ["Ps8Hashable", "UITableView"]
 - !private ["Ps8Hashable", "UITableViewCell"]
+- !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "addTarget"]
 - !private ["Ps8Hashable", "attributedTitle"]
@@ -597,6 +641,7 @@ depends-member:
 - ["Ps8Hashable", "destinations"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "endRefreshing"]
+- !private ["Ps8Hashable", "flag"]
 - !private ["Ps8Hashable", "frame"]
 - !private ["Ps8Hashable", "image"]
 - !private ["Ps8Hashable", "imageView"]
@@ -634,6 +679,7 @@ depends-member:
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "textLabel"]
 - !private ["Ps8Hashable", "view"]
+- ["Ps8Hashable", "viewDidLayoutSubviews"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
 - !private ["Ps8Hashable", "whiteColor"]
@@ -654,6 +700,7 @@ depends-member:
 - !private ["Vs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "_DisabledRangeIndex"]
 - !private ["Si", "deinit"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "deinit"]
@@ -661,36 +708,47 @@ depends-member:
 - !private ["Vs4Int8", "deinit"]
 - !private ["Ps21IntegerArithmeticType", "Distance"]
 - !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "_DisabledRangeIndex"]
 - !private ["Ps25IntegerLiteralConvertible", "Distance"]
 - !private ["Ps25IntegerLiteralConvertible", "Generator"]
 - !private ["Ps25IntegerLiteralConvertible", "Index"]
 - !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps25IntegerLiteralConvertible", "SubSequence"]
+- !private ["Ps25IntegerLiteralConvertible", "_DisabledRangeIndex"]
 - !private ["Ps25IntegerLiteralConvertible", "_Element"]
 - !private ["Ps25IntegerLiteralConvertible", "arrayValue"]
+- !private ["Ps25IntegerLiteralConvertible", "count"]
 - !private ["Ps25IntegerLiteralConvertible", "init"]
 - !private ["Ps25IntegerLiteralConvertible", "stringValue"]
 - !private ["Ps25IntegerLiteralConvertible", "subscript"]
 - !private ["Ps11IntegerType", "Distance"]
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "_DisabledRangeIndex"]
+- !private ["Ps12IntervalType", "Generator"]
 - !private ["V3Map4JSON", "Generator"]
 - !private ["V3Map4JSON", "Index"]
 - !private ["V3Map4JSON", "SubSequence"]
 - !private ["V3Map4JSON", "_Element"]
 - !private ["V3Map4JSON", "arrayValue"]
+- !private ["V3Map4JSON", "count"]
 - !private ["V3Map4JSON", "deinit"]
 - !private ["V3Map4JSON", "init"]
 - !private ["V3Map4JSON", "stringValue"]
 - !private ["V3Map4JSON", "subscript"]
+- !private ["V3Map13JSONGenerator", "deinit"]
 - !private ["V3Map9JSONIndex", "Distance"]
 - !private ["V3Map9JSONIndex", "_DisabledRangeIndex"]
 - !private ["V3Map9JSONIndex", "deinit"]
 - !private ["P3Map17JSONSubscriptType", "Distance"]
 - !private ["P3Map17JSONSubscriptType", "IntegerLiteralType"]
+- !private ["P3Map17JSONSubscriptType", "_DisabledRangeIndex"]
 - !private ["P3Map17JSONSubscriptType", "init"]
+- !private ["C3Map17MapViewController", "destinations"]
+- !private ["C3Map17MapViewController", "flag"]
 - !private ["C3Map17MapViewController", "init"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "_DisabledRangeIndex"]
 - !private ["Ps14MirrorPathType", "init"]
 - !private ["Ps21MutableCollectionType", "Element"]
 - !private ["Ps21MutableCollectionType", "Generator"]
@@ -721,6 +779,7 @@ depends-member:
 - !private ["Ps16MutableSliceable", "subscript"]
 - !private ["CSo18NSAttributedString", "init"]
 - !private ["PSo8NSCoding", "CGRectMake"]
+- !private ["PSo8NSCoding", "Destination"]
 - !private ["PSo8NSCoding", "JSON"]
 - !private ["PSo8NSCoding", "MapViewController"]
 - !private ["PSo8NSCoding", "NSAttributedString"]
@@ -743,6 +802,7 @@ depends-member:
 - ["PSo8NSCoding", "destinations"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "endRefreshing"]
+- !private ["PSo8NSCoding", "flag"]
 - !private ["PSo8NSCoding", "frame"]
 - !private ["PSo8NSCoding", "image"]
 - !private ["PSo8NSCoding", "imageView"]
@@ -779,6 +839,7 @@ depends-member:
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textLabel"]
 - !private ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "viewDidLayoutSubviews"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - !private ["PSo8NSCoding", "whiteColor"]
@@ -787,6 +848,7 @@ depends-member:
 - !private ["PSo9NSCopying", "row"]
 - !private ["PSo9NSCopying", "whiteColor"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRectMake"]
+- !private ["PSo26NSExtensionRequestHandling", "Destination"]
 - !private ["PSo26NSExtensionRequestHandling", "JSON"]
 - !private ["PSo26NSExtensionRequestHandling", "MapViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "NSAttributedString"]
@@ -802,6 +864,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "bus"]
 - ["PSo26NSExtensionRequestHandling", "destinations"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "flag"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
@@ -829,6 +892,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "startPlanRoute"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLayoutSubviews"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - ["PSo26NSExtensionRequestHandling", ""]
@@ -836,6 +900,8 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "CGRectMake"]
+- !private ["CSo8NSObject", "Destination"]
+- !private ["CSo8NSObject", "Double"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "JSON"]
 - !private ["CSo8NSObject", "MapViewController"]
@@ -863,6 +929,7 @@ depends-member:
 - ["CSo8NSObject", "destinations"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "endRefreshing"]
+- !private ["CSo8NSObject", "flag"]
 - !private ["CSo8NSObject", "frame"]
 - !private ["CSo8NSObject", "image"]
 - !private ["CSo8NSObject", "imageView"]
@@ -900,10 +967,12 @@ depends-member:
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textLabel"]
 - !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidLayoutSubviews"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - !private ["CSo8NSObject", "whiteColor"]
 - !private ["PSo16NSObjectProtocol", "CGRectMake"]
+- !private ["PSo16NSObjectProtocol", "Destination"]
 - !private ["PSo16NSObjectProtocol", "JSON"]
 - !private ["PSo16NSObjectProtocol", "MapViewController"]
 - !private ["PSo16NSObjectProtocol", "NSAttributedString"]
@@ -926,6 +995,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "destinations"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "endRefreshing"]
+- !private ["PSo16NSObjectProtocol", "flag"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - !private ["PSo16NSObjectProtocol", "imageView"]
@@ -963,6 +1033,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textLabel"]
 - !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewDidLayoutSubviews"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
@@ -970,24 +1041,32 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "row"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo5NSURL", "init"]
 - !private ["CSo15NSURLConnection", "sendSynchronousRequest"]
 - !private ["CSo12NSURLRequest", "init"]
 - !private ["Ps21NilLiteralConvertible", "Generator"]
 - !private ["Ps21NilLiteralConvertible", "Index"]
+- ["Ps21NilLiteralConvertible", "Some"]
 - !private ["Ps21NilLiteralConvertible", "SubSequence"]
 - !private ["Ps21NilLiteralConvertible", "_Element"]
 - !private ["Ps21NilLiteralConvertible", "arrayValue"]
+- !private ["Ps21NilLiteralConvertible", "count"]
 - !private ["Ps21NilLiteralConvertible", "init"]
 - !private ["Ps21NilLiteralConvertible", "stringValue"]
 - !private ["Ps21NilLiteralConvertible", "subscript"]
 - !private ["Ps13OptionSetType", "Normal"]
 - !private ["Ps13OptionSetType", "ValueChanged"]
+- ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps21RandomAccessIndexType", "_DisabledRangeIndex"]
+- !private ["Vs5Range", "Generator"]
+- !private ["Vs5Range", "deinit"]
+- !private ["Vs14RangeGenerator", "Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "Generator"]
 - !private ["Ps30RangeReplaceableCollectionType", "Index"]
@@ -1005,6 +1084,7 @@ depends-member:
 - !private ["Ps16RawRepresentable", "ValueChanged"]
 - !private ["Ps16RawRepresentable", "_Element"]
 - !private ["Ps16RawRepresentable", "arrayValue"]
+- !private ["Ps16RawRepresentable", "count"]
 - !private ["Ps16RawRepresentable", "init"]
 - !private ["Ps16RawRepresentable", "stringValue"]
 - !private ["Ps16RawRepresentable", "subscript"]
@@ -1025,8 +1105,10 @@ depends-member:
 - !private ["Ps14SetAlgebraType", "ValueChanged"]
 - !private ["Ps17SignedIntegerType", "Distance"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps17SignedIntegerType", "_DisabledRangeIndex"]
 - !private ["Ps16SignedNumberType", "Distance"]
 - !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "_DisabledRangeIndex"]
 - !private ["Vs5Slice", "Generator"]
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "SubSequence"]
@@ -1035,6 +1117,7 @@ depends-member:
 - !private ["Ps10Streamable", "init"]
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "_DisabledRangeIndex"]
 - !private ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps30StringInterpolationConvertible", "init"]
@@ -1043,6 +1126,7 @@ depends-member:
 - !private ["Ps24StringLiteralConvertible", "SubSequence"]
 - !private ["Ps24StringLiteralConvertible", "_Element"]
 - !private ["Ps24StringLiteralConvertible", "arrayValue"]
+- !private ["Ps24StringLiteralConvertible", "count"]
 - !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "stringValue"]
 - !private ["Ps24StringLiteralConvertible", "subscript"]
@@ -1079,6 +1163,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textLabel"]
 - !private ["PSo21UIAppearanceContainer", "CGRectMake"]
+- !private ["PSo21UIAppearanceContainer", "Destination"]
 - !private ["PSo21UIAppearanceContainer", "JSON"]
 - !private ["PSo21UIAppearanceContainer", "MapViewController"]
 - !private ["PSo21UIAppearanceContainer", "NSAttributedString"]
@@ -1101,6 +1186,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "destinations"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "endRefreshing"]
+- !private ["PSo21UIAppearanceContainer", "flag"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - !private ["PSo21UIAppearanceContainer", "image"]
 - !private ["PSo21UIAppearanceContainer", "imageView"]
@@ -1136,6 +1222,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textLabel"]
 - !private ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "viewDidLayoutSubviews"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -1144,6 +1231,7 @@ depends-member:
 - !private ["CSo7UIColor", "init"]
 - !private ["CSo7UIColor", "whiteColor"]
 - !private ["PSo18UIContentContainer", "CGRectMake"]
+- !private ["PSo18UIContentContainer", "Destination"]
 - !private ["PSo18UIContentContainer", "JSON"]
 - !private ["PSo18UIContentContainer", "MapViewController"]
 - !private ["PSo18UIContentContainer", "NSAttributedString"]
@@ -1159,6 +1247,7 @@ depends-member:
 - ["PSo18UIContentContainer", "bus"]
 - ["PSo18UIContentContainer", "destinations"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "flag"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "navigationController"]
@@ -1186,6 +1275,7 @@ depends-member:
 - ["PSo18UIContentContainer", "startPlanRoute"]
 - ["PSo18UIContentContainer", "tableView"]
 - !private ["PSo18UIContentContainer", "view"]
+- ["PSo18UIContentContainer", "viewDidLayoutSubviews"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", ""]
@@ -1230,6 +1320,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textLabel"]
 - !private ["PSo18UIFocusEnvironment", "CGRectMake"]
+- !private ["PSo18UIFocusEnvironment", "Destination"]
 - !private ["PSo18UIFocusEnvironment", "JSON"]
 - !private ["PSo18UIFocusEnvironment", "MapViewController"]
 - !private ["PSo18UIFocusEnvironment", "NSAttributedString"]
@@ -1252,6 +1343,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "destinations"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "endRefreshing"]
+- !private ["PSo18UIFocusEnvironment", "flag"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - !private ["PSo18UIFocusEnvironment", "image"]
 - !private ["PSo18UIFocusEnvironment", "imageView"]
@@ -1287,6 +1379,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textLabel"]
 - !private ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", "viewDidLayoutSubviews"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -1303,6 +1396,8 @@ depends-member:
 - !private ["CSo16UIRefreshControl", "init"]
 - ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "CGRectMake"]
+- !private ["CSo11UIResponder", "Destination"]
+- !private ["CSo11UIResponder", "Double"]
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "JSON"]
 - !private ["CSo11UIResponder", "MapViewController"]
@@ -1330,6 +1425,7 @@ depends-member:
 - ["CSo11UIResponder", "destinations"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - !private ["CSo11UIResponder", "endRefreshing"]
+- !private ["CSo11UIResponder", "flag"]
 - !private ["CSo11UIResponder", "frame"]
 - !private ["CSo11UIResponder", "image"]
 - !private ["CSo11UIResponder", "imageView"]
@@ -1365,6 +1461,7 @@ depends-member:
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textLabel"]
 - !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidLayoutSubviews"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - !private ["CSo12UIScrollView", "addSubview"]
@@ -1375,6 +1472,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "registerClass"]
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["PSo20UIScrollViewDelegate", "CGRectMake"]
+- !private ["PSo20UIScrollViewDelegate", "Destination"]
 - !private ["PSo20UIScrollViewDelegate", "JSON"]
 - !private ["PSo20UIScrollViewDelegate", "MapViewController"]
 - !private ["PSo20UIScrollViewDelegate", "NSAttributedString"]
@@ -1416,6 +1514,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["PSo16UIStateRestoring", "CGRectMake"]
+- !private ["PSo16UIStateRestoring", "Destination"]
 - !private ["PSo16UIStateRestoring", "JSON"]
 - !private ["PSo16UIStateRestoring", "MapViewController"]
 - !private ["PSo16UIStateRestoring", "NSAttributedString"]
@@ -1431,6 +1530,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "bus"]
 - ["PSo16UIStateRestoring", "destinations"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "flag"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "navigationController"]
@@ -1458,6 +1558,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "startPlanRoute"]
 - ["PSo16UIStateRestoring", "tableView"]
 - !private ["PSo16UIStateRestoring", "view"]
+- ["PSo16UIStateRestoring", "viewDidLayoutSubviews"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", ""]
@@ -1473,6 +1574,7 @@ depends-member:
 - !private ["CSo15UITableViewCell", "textLabel"]
 - !private ["OSC20UITableViewCellStyle", "Subtitle"]
 - !private ["PSo21UITableViewDataSource", "CGRectMake"]
+- !private ["PSo21UITableViewDataSource", "Destination"]
 - !private ["PSo21UITableViewDataSource", "JSON"]
 - !private ["PSo21UITableViewDataSource", "MapViewController"]
 - !private ["PSo21UITableViewDataSource", "NSAttributedString"]
@@ -1514,6 +1616,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "CGRectMake"]
+- !private ["PSo19UITableViewDelegate", "Destination"]
 - !private ["PSo19UITableViewDelegate", "JSON"]
 - !private ["PSo19UITableViewDelegate", "MapViewController"]
 - !private ["PSo19UITableViewDelegate", "NSAttributedString"]
@@ -1555,6 +1658,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo19UITableViewDelegate", ""]
 - !private ["PSo18UITraitEnvironment", "CGRectMake"]
+- !private ["PSo18UITraitEnvironment", "Destination"]
 - !private ["PSo18UITraitEnvironment", "JSON"]
 - !private ["PSo18UITraitEnvironment", "MapViewController"]
 - !private ["PSo18UITraitEnvironment", "NSAttributedString"]
@@ -1577,6 +1681,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "destinations"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "endRefreshing"]
+- !private ["PSo18UITraitEnvironment", "flag"]
 - !private ["PSo18UITraitEnvironment", "frame"]
 - !private ["PSo18UITraitEnvironment", "image"]
 - !private ["PSo18UITraitEnvironment", "imageView"]
@@ -1612,6 +1717,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textLabel"]
 - !private ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "viewDidLayoutSubviews"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
@@ -1633,6 +1739,8 @@ depends-member:
 - !private ["CSo6UIView", "textLabel"]
 - ["CSo16UIViewController", "AnyObject"]
 - !private ["CSo16UIViewController", "CGRectMake"]
+- !private ["CSo16UIViewController", "Destination"]
+- !private ["CSo16UIViewController", "Double"]
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "JSON"]
 - !private ["CSo16UIViewController", "MapViewController"]
@@ -1653,6 +1761,7 @@ depends-member:
 - ["CSo16UIViewController", "bus"]
 - ["CSo16UIViewController", "destinations"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- !private ["CSo16UIViewController", "flag"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "navigationController"]
@@ -1680,6 +1789,7 @@ depends-member:
 - ["CSo16UIViewController", "startPlanRoute"]
 - ["CSo16UIViewController", "tableView"]
 - !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidLayoutSubviews"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", ""]
@@ -1694,6 +1804,7 @@ depends-member:
 - !private ["Ps31UnicodeScalarLiteralConvertible", "SubSequence"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "_Element"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "arrayValue"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "count"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "stringValue"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "subscript"]
@@ -1709,6 +1820,7 @@ depends-member:
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "_DisabledRangeIndex"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
@@ -1730,14 +1842,17 @@ depends-member:
 - !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
 - !private ["Ps22_IntegerArithmeticType", "Distance"]
 - !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "_DisabledRangeIndex"]
 - !private ["Ps12_IntegerType", "Distance"]
 - !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "_DisabledRangeIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "Distance"]
 - !private ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "Generator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
@@ -1746,12 +1861,15 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps22_RandomAccessAmbiguity", "Distance"]
 - !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps22_RandomAccessAmbiguity", "_DisabledRangeIndex"]
 - !private ["Ps12_Reflectable", "Distance"]
 - !private ["Ps12_Reflectable", "Element"]
 - !private ["Ps12_Reflectable", "Generator"]
 - !private ["Ps12_Reflectable", "Index"]
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_DisabledRangeIndex"]
 - !private ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "addSubview"]
 - !private ["Ps12_Reflectable", "addTarget"]
@@ -1772,13 +1890,13 @@ depends-member:
 - !private ["Ps12_Reflectable", "reloadData"]
 - !private ["Ps12_Reflectable", "removeAll"]
 - !private ["Ps12_Reflectable", "setTitleColor"]
-- !private ["Ps12_Reflectable", "size"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps12_Reflectable", "text"]
 - !private ["Ps12_Reflectable", "textLabel"]
 - !private ["Ps12_Reflectable", "width"]
 - !private ["Ps18_SignedIntegerType", "Distance"]
 - !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps18_SignedIntegerType", "_DisabledRangeIndex"]
 depends-nominal:
 - "C3Map25AfterSubmitViewController"
 - "Ps9AnyObject"
@@ -1792,13 +1910,15 @@ depends-nominal:
 - !private "Ps11BooleanType"
 - !private "V12CoreGraphics7CGFloat"
 - !private "VSC6CGRect"
-- !private "VSC6CGSize"
 - "Ps11CVarArgType"
 - !private "Vs9Character"
+- !private "Vs14ClosedInterval"
 - !private "Ps14CollectionType"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
+- !private "V3Map11Destination"
+- !private "Vs10Dictionary"
 - !private "Ps28DictionaryLiteralConvertible"
 - !private "Sd"
 - "Ps9Equatable"
@@ -1819,7 +1939,9 @@ depends-nominal:
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
+- !private "Ps12IntervalType"
 - !private "V3Map4JSON"
+- !private "V3Map13JSONGenerator"
 - !private "V3Map9JSONIndex"
 - !private "P3Map17JSONSubscriptType"
 - !private "C3Map17MapViewController"
@@ -1840,11 +1962,13 @@ depends-nominal:
 - !private "CSo5NSURL"
 - !private "CSo15NSURLConnection"
 - !private "CSo12NSURLRequest"
-- !private "Ps21NilLiteralConvertible"
+- "Ps21NilLiteralConvertible"
 - !private "Ps13OptionSetType"
-- !private "Sq"
+- "Sq"
 - !private "Ps16OutputStreamType"
 - !private "Ps21RandomAccessIndexType"
+- !private "Vs5Range"
+- !private "Vs14RangeGenerator"
 - !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
 - !private "V10ObjectiveC8Selector"
@@ -1910,7 +2034,7 @@ depends-nominal:
 - !private "Ps12_IntegerType"
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Ps22_RandomAccessAmbiguity"
-- !private "Ps12_Reflectable"
+- "Ps12_Reflectable"
 - !private "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 depends-external:
@@ -1985,4 +2109,4 @@ depends-external:
 - "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSAddressComponent.h"
 - "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GooglePlaces.h"
 - "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Modules/module.modulemap"
-interface-hash: "f6796b09fb26a33aed3247a6125cc3ec"
+interface-hash: "3e3dbd9e9e3d9fb3c3e11873b3b232ea"

@@ -98,6 +98,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class UIRefreshControl;
 @class UITableView;
 @class NSIndexPath;
 @class UITableViewCell;
@@ -107,11 +108,15 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC3Map25AfterSubmitViewController")
 @interface AfterSubmitViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, strong) UIRefreshControl * _Null_unspecified refreshControl;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified planRouteButton;
 @property (nonatomic, copy) NSString * _Null_unspecified bus;
 @property (nonatomic, copy) NSArray<NSString *> * _Null_unspecified destinations;
 @property (nonatomic, strong) UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
+- (void)viewDidLayoutSubviews;
+- (void)refresh_table;
+- (void)refresh:(id _Nonnull)sender;
 - (void)setupTableView;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
@@ -138,7 +143,6 @@ SWIFT_CLASS("_TtC3Map11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIRefreshControl;
 
 SWIFT_CLASS("_TtC3Map26DestinationsViewController")
 @interface DestinationsViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
@@ -160,32 +164,45 @@ SWIFT_CLASS("_TtC3Map26DestinationsViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIPickerView;
+@class UILabel;
 
 SWIFT_CLASS("_TtC3Map27DriverShuttleViewController")
-@interface DriverShuttleViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface DriverShuttleViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull buses;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull destinations;
-@property (nonatomic, strong) UITableView * _Null_unspecified tableView;
+@property (nonatomic, strong) UIPickerView * _Null_unspecified pickerView;
+@property (nonatomic, strong) UILabel * _Null_unspecified chooseTime;
 - (void)viewDidLoad;
-- (void)setupTableView;
+- (void)setuppickerView;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView;
+- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (NSString * _Null_unspecified)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (void)didReceiveMemoryWarning;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class GMSMarker;
+@class GMSMutablePath;
+@class GMSPolyline;
+@class GMSMapView;
 
 SWIFT_CLASS("_TtC3Map17MapViewController")
 @interface MapViewController : UIViewController
 @property (nonatomic, copy) NSString * _Nonnull address;
 @property (nonatomic, copy) NSString * _Nonnull apiKey;
+@property (nonatomic, copy) NSArray<GMSMarker *> * _Nonnull markers;
+@property (nonatomic) BOOL flag;
+@property (nonatomic, strong) GMSMutablePath * _Null_unspecified Path;
+@property (nonatomic, strong) GMSPolyline * _Null_unspecified Line;
+@property (nonatomic, strong) GMSMapView * _Null_unspecified Map;
 @property (nonatomic, strong) UIButton * _Nonnull nextButton;
 - (void)loadView;
+- (void)removeLine;
+- (void)fitMarkers;
 - (void)nextButtonClicked:(UIButton * _Null_unspecified)sender;
-- (void)loadData:(NSString * _Nonnull)searchText;
-- (void)fetchData:(NSString * _Nonnull)searchText;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -197,21 +214,23 @@ SWIFT_CLASS("_TtC3Map17MapViewController")
 
 
 SWIFT_CLASS("_TtC3Map21ShuttleViewController")
-@interface ShuttleViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface ShuttleViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull buses;
-@property (nonatomic, strong) UITableView * _Null_unspecified tableView;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull destinations;
+@property (nonatomic, strong) UIPickerView * _Null_unspecified pickerView;
+@property (nonatomic, strong) UILabel * _Null_unspecified chooseTime;
 - (void)viewDidLoad;
-- (void)setupTableView;
+- (void)setuppickerView;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView;
+- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (NSString * _Null_unspecified)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (void)didReceiveMemoryWarning;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UITextField;
-@class UILabel;
 
 SWIFT_CLASS("_TtC3Map20SubmitViewController")
 @interface SubmitViewController : UIViewController

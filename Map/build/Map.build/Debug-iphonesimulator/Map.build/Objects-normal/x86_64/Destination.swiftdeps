@@ -7,16 +7,14 @@ provides-member:
 - ["V3Map11Destination", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
+- "FloatLiteralType"
 - "Destination"
-- "Double"
+- "StringLiteralType"
 depends-member:
-- ["V3Map11Destination", "Double"]
-- ["V3Map11Destination", "String"]
 - ["V3Map11Destination", "address"]
 - ["V3Map11Destination", "init"]
-- ["V3Map11Destination", "lat"]
-- ["V3Map11Destination", "lng"]
+- ["V3Map11Destination", "x"]
+- ["V3Map11Destination", "y"]
 depends-nominal:
 - "V3Map11Destination"
 depends-dynamic-lookup:
@@ -92,4 +90,4 @@ depends-external:
 - "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GMSAddressComponent.h"
 - "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Headers/GooglePlaces.h"
 - "/Users/dinghba/repos/Campus2Home/Map/Map/GooglePlaces.framework/Modules/module.modulemap"
-interface-hash: "252dd334e917280b1bb76f27b3d348e8"
+interface-hash: "b31026ae3798c28b5e0f304d0b1cd521"
