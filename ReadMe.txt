@@ -1,7 +1,22 @@
-Finished basic server in python backend using flask. The details of handling requests are not implemented yet because how IOS transmit json files and make HTTP requests is still unknown.  
+Requirement before running
 
-Finished the skeleton of the IOS project (in Map/Shuttle2Home.zip), including all the views and the transitions between them. Python backend is not connected to the project yet and mock data are hardcoded into the application.
+The swift project is built upon Google Map API. Install Google Map ToolKit：
+You need to download 
+-GoogleMap.bundle
+-GoogleMaps.framework
+-GoogleMapsBase.framework
+-GoogleMapsCore.framework
+-GooglePlaces.bundle
+-GooglePlaces.framework
+and put it in /Map/Map directory
 
-Test out Google Map Api. If TA needs to see the map project, he needs to manually install Google Map and Google Places Api because they are too big to include in the attachment.
 
-We haven’t put these three things together yet so there are two Xcode project and two python files in total.
+Local server is built in Python using Flask and Postgresql. Install the Postgresql.
+
+How to run
+
+To start the server, use
+
+python3 app.py
+
+IOS application can run once the localhost setup is complete.
